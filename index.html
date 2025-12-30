@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valeryia Bulakhava | Product Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Valeryia Bulakhava | Product designer</div>
+        <div class="header-right">
+            <div class="lang-switcher">
+                <button class="lang-btn" data-lang="ru">Ru</button>
+                <button class="lang-btn active" data-lang="en">Eng</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section (First-screen) -->
+        <section class="hero">
+            <!-- Gradient blur background -->
+            <div class="gradient-blur">
+                <img src="images/Ellipse-4x.png" alt="" class="gradient-img">
+            </div>
+            
+            <!-- Text content -->
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hey, I'm Valeryia.<br>
+                    I'm a Product Designer
+                </h1>
+                <div class="hero-description">
+                    <p class="hero-text">
+                        I'm <b>open</b> and <b>sincere</b> person with a passion to design.
+                        Attention to details and good time-managmenting are the 
+                        key abilities, with help me in my work and live.
+                    </p>
+                    <p class="hero-note">(I love design as much as I love chamomile tea)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Card Section -->
+        <section class="case-section">
+            <div class="case-card">
+                <!-- Left side - Case description -->
+                <div class="case-description">
+                    <div class="case-header">
+                        <h2 class="case-title">Live activity for IOS & Android</h2>
+                        <span class="case-number">01</span>
+                    </div>
+                    <div class="case-details">
+                        <p class="case-text">
+                            Designed real-time order tracking on the lock screen for instant status updates
+                        </p>
+                        <div class="case-project">
+                            <div class="wavy-line"></div>
+                            <div class="project-meta">
+                                <span class="project-label">Project</span>
+                                <span class="project-name">FIG (future is great) – delivery of goods</span>
+                            </div>
+                        </div>
+                        <a href="case.html" class="case-link">View full case study →</a>
+                    </div>
+                </div>
+                
+                <!-- Right side - Image -->
+                <div class="case-image">
+                    <img src="images/4x.png" alt="Live Activity Preview">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Valeryia Bulakhava | Product designer</div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Linkedin</a>
+                <a href="#" class="footer-link">Email</a>
+                <a href="#" class="footer-link">Behance</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language switcher functionality
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
