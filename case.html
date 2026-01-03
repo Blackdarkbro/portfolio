@@ -12,7 +12,7 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <a href="index.html" class="logo">Valeryia Bulakhava | Product designer</a>
+        <a href="/" class="logo">Valeryia Bulakhava | Product designer</a>
         <div class="header-right">
             <div class="lang-switcher">
                 <button class="lang-btn" data-lang="ru">Ru</button>
@@ -139,7 +139,7 @@
         </section>
 
         <!-- CTA Section -->
-        <section class="case-section case-section-cta">
+        <section id="case-cta" class="case-section case-section-cta">
             <div class="case-cta-card">
                 <div class="case-cta-content">
                     <div class="case-cta-text-container">
@@ -270,16 +270,14 @@
                 <img src="https://www.figma.com/api/mcp/asset/61219e00-59d8-4915-920f-92c69c82ced8" alt="Expanded presentation">
             </div>
             
-            <div style="padding: 10px 212px 0; width: 100%; max-width: 1200px; margin: 0 auto;">
-                <div class="case-section-content" style="padding: 0 40px;">
-                    <p class="design-chapter-text"><strong>The Expanded mode</strong> retains all elements, similar to the Live Activity on the Lock Screen, with minor adjustments aligned with Apple's Human Interface Guidelines (HIG):</p>
-                    
-                    <ul class="role-sublist" style="margin-top: 8px;">
-                        <li><span>Increased corner radius</span></li>
-                        <li><span>Black background color</span></li>
-                        <li><span>A more compact logo</span></li>
-                    </ul>
-                </div>
+            <div class="case-section-content">
+                <p class="design-chapter-text"><strong>The Expanded mode</strong> retains all elements, similar to the Live Activity on the Lock Screen, with minor adjustments aligned with Apple's Human Interface Guidelines (HIG):</p>
+                
+                <ul class="role-sublist">
+                    <li><span>Increased corner radius</span></li>
+                    <li><span>Black background color</span></li>
+                    <li><span>A more compact logo</span></li>
+                </ul>
             </div>
         </section>
 
@@ -301,14 +299,13 @@
                     <p class="design-chapter-text">The final result is shown below.</p>
                 </div>
             </div>
-        </section>
-
-        <!-- Compact/Minimal Images -->
-        <div class="platform-images-row">
+                    <!-- Compact/Minimal Images -->
+        <div class="platform-images-row" style="margin-bottom: 0;">
             <img src="https://www.figma.com/api/mcp/asset/625e7410-b752-420e-8ee4-a02d32f47aa6" alt="Compact presentation">
             <img src="https://www.figma.com/api/mcp/asset/86635c07-f46e-4dec-b190-0ac1f61674b4" alt="Minimal presentation (attached)">
             <img src="https://www.figma.com/api/mcp/asset/43b55f78-0786-4af0-911e-80ec849b635b" alt="Minimal presentation (detached)">
         </div>
+        </section>
 
         <!-- Android Section -->
         <section class="case-section" style="padding-top: 0;">
@@ -323,13 +320,12 @@
                     <p class="design-chapter-text" style="margin-top: 8px;">The screens can be seen below.</p>
                 </div>
             </div>
-        </section>
-
-        <!-- Android Images -->
-        <div class="case-image-row case-image-row-two" style="padding: 40px 154px 60px;">
+                    <!-- Android Images -->
+        <div class="case-image-row case-image-row-two" style="padding-bottom:0;margin-bottom: 0;">
             <img src="https://www.figma.com/api/mcp/asset/15d92e04-ceb8-468a-ba11-21a2490ef56b" alt="Collapsed state">
             <img src="https://www.figma.com/api/mcp/asset/73c4e795-a2d0-4521-82d9-40d6913ebd47" alt="Expanded state">
         </div>
+        </section>
 
         <div class="design-section-divider"></div>
 
@@ -442,7 +438,7 @@
         <div class="design-section-divider"></div>
 
         <!-- Chapter 06: Results & Impact -->
-        <section class="case-section">
+        <section id="results-impact" class="case-section">
             <div class="case-section-content">
                 <div class="design-chapter">
                     <div class="design-chapter-header">
@@ -517,7 +513,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-logo">Valeryia Bulakhava | Product designer</div>
+            <a href="/" class="footer-logo">Valeryia Bulakhava | Product designer</a>
             <div class="footer-links">
                 <a href="#" class="footer-link">LinkedIn</a>
                 <a href="#" class="footer-link">Email</a>
@@ -537,7 +533,12 @@
 
         // Smooth scroll for "Straight to the case" button
         document.querySelector('.case-button-dark')?.addEventListener('click', () => {
-            document.querySelector('.design-chapter')?.scrollIntoView({ behavior: 'smooth' });
+            document.querySelector('#case-cta')?.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Smooth scroll for "View outcome" button
+        document.querySelector('.case-button-cta')?.addEventListener('click', () => {
+            document.querySelector('#results-impact')?.scrollIntoView({ behavior: 'smooth' });
         });
     </script>
 </body>
