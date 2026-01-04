@@ -626,6 +626,8 @@ body {
 
 .case-section-content {
     padding: 0 40px;
+    max-width: 696px;
+    margin: 0 auto;
 }
 
 .case-section-title {
