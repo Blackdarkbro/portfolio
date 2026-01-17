@@ -244,35 +244,35 @@ body {
 .case-project {
     display: flex;
     gap: 20px;
-    align-items: flex-start;
-    height: 44px;
-    overflow: hidden;
+    /* чтобы линия тянулась по высоте контента (как на скриншоте) */
+    align-items: stretch;
 }
 
 .wavy-line {
-    width: 10px;
-    height: 62px;
+    width: 16px;
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    align-self: stretch;
 }
 
 .wavy-line::before {
     content: '';
-    width: 62px;
-    height: 10px;
-    background-image: url("https://www.figma.com/api/mcp/asset/d9d81f1c-428c-4815-a733-2691b9fa623c");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    transform: rotate(270deg);
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -5px;
-    margin-left: -31px;
+    inset: 0;
+    background-image: url("images/wavex.png");
+    background-repeat: repeat-y;
+    background-position: center top;
+    /*
+      Не растягиваем по высоте “вручную”, иначе волна превращается в прямую.
+      Держим ширину 10px и сохраняем пропорции картинки.
+      Частота повторов теперь зависит от реальной высоты блока.
+    */
+    /* частые повторы, но сама линия крупнее */
+    background-size: 20px 13px;
+    pointer-events: none;
 }
 
 .project-meta {
@@ -377,7 +377,166 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 1024px) {
+/* Tablet styles (640px - 1024px) */
+@media (min-width: 640px) and (max-width: 1024px) {
+    body {
+        /* Не сжимаем всю страницу до 640px на широких планшетах (например 1008px),
+           иначе фоновые элементы (градиент) будут обрезаться по краю body. */
+        max-width: 100%;
+        margin: 0;
+    }
+    
+    .header {
+        padding: 24px 20px;
+        max-width: 1200px;
+        width: 100%;
+    }
+    
+    .main {
+        /* На 1008px (и близко) оставляем контейнер по ширине экрана,
+           а не фиксируем в 640px. */
+        max-width: 1200px;
+        width: 100%;
+    }
+    
+    .hero {
+        height: 712px;
+        min-height: 712px;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .hero-content {
+        padding: 0 40px 60px 40px;
+        width: 100%;
+        max-width: 640px;
+        justify-content: center;
+    }
+    
+    .hero-title {
+        font-size: 50px;
+        line-height: 1.1;
+        letter-spacing: -0.01em;
+        width: 507px;
+        max-width: 100%;
+    }
+    
+    .hero-description {
+        width: 507px;
+        max-width: 100%;
+    }
+    
+    .hero-note {
+        width: 593px;
+        max-width: 100%;
+    }
+    
+    .gradient-blur {
+        width: 640px;
+        height: 640px;
+        /* Всегда помещаем круг целиком внутри контейнера на 640–1024px */
+        left: calc(100% - 640px);
+        top: 16px;
+        transform: none;
+        position: absolute;
+    }
+    
+    .main > .case-section {
+        padding: 40px;
+        max-width: 640px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .case-card {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px 20px;
+        padding: 0;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    
+    .case-description {
+        flex: 1 0 0;
+        min-width: 0;
+        padding: 10px 0 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .case-header {
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+        width: 100%;
+    }
+    
+    .case-title {
+        font-size: 34px;
+        line-height: 1.1;
+        letter-spacing: -0.01em;
+        flex: 1 0 0;
+        min-width: 0;
+    }
+    
+    .case-number {
+        font-size: 34px;
+        line-height: 1.1;
+        letter-spacing: -0.01em;
+        flex-shrink: 0;
+    }
+    
+    .case-details {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        height: 126px;
+    }
+    
+    .case-image {
+        flex: 0 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+        height: 350px;
+    }
+    
+    .case-image img {
+        width: 320px;
+        height: 350px;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+    
+    .footer {
+        margin: 160px auto 0;
+        padding: 30px 40px;
+        max-width: 640px;
+        width: 100%;
+    }
+    
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+/* Styles for screens above 1024px remain unchanged */
+
+/* Styles for screens below 640px (mobile) - will override tablet styles */
+@media (max-width: 639px) {
+    body {
+        max-width: 100%;
+    }
+    
     .hero {
         height: 100vh;
         min-height: 500px;
@@ -504,7 +663,8 @@ body {
     
     .case-project {
         gap: 10px;
-        height: 58px;
+        /* не режем волну (она 62px) */
+        min-height: 62px;
     }
     
     .case-image {
