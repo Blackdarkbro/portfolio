@@ -34,6 +34,11 @@ async function setLanguage(lang) {
     // Обновить lang атрибут у html
     document.documentElement.lang = lang;
     
+    // Обновить title страницы, если есть перевод
+    if (t['case.page.title']) {
+        document.title = t['case.page.title'];
+    }
+    
     // Обновить активную кнопку
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.lang === lang);
