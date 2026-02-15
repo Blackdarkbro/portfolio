@@ -20,6 +20,20 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* ==========================================================================
+   Breakpoints (mobile-first)
+   В медиа-запросах ниже используются числа: var() в @media поддерживают не все браузеры.
+
+   --bp-mobile:  360px  — малый мобильный (в коде: max-width: 360px)
+   --bp-tablet:  640px  — планшет (min-width: 640px, max-width: 1023px)
+   --bp-desktop: 1024px — десктоп (базовые стили; ниже — max-width: 1023px)
+   ========================================================================== */
+:root {
+    --bp-mobile: 360px;
+    --bp-tablet: 640px;
+    --bp-desktop: 1024px;
+}
+
 /* Header */
 .header {
     display: flex;
@@ -61,6 +75,11 @@ body {
     padding: 2px;
     width: 120px;
     height: 40px;
+}
+
+/* Страница кейса: другой фон переключателя языка */
+body.page-case .lang-switcher {
+    background: rgba(255, 255, 255, 0.45);
 }
 
 .lang-btn {
@@ -400,6 +419,14 @@ body {
     height: 1058px;
     pointer-events: none;
     z-index: 1;
+}
+
+.case-hero-gradient {
+    width: 1560px;
+    height: 1560px;
+    left: 97%;
+    top: -810px;
+    transform: translateX(-50%);
 }
 
 .case-hero-content {
@@ -1110,13 +1137,6 @@ body {
     flex-wrap: wrap;
     gap: 8px;
     justify-content: center;
-    align-items: center;
-      /* Делаем блок шириной во весь экран */
-   position: relative;
-   left: 50%;
-   transform: translateX(-50%);
-   width: 100%;
-   max-width: none; /* отменяем ограничение */
 }
 
 .platform-images-row img {
@@ -1218,6 +1238,8 @@ body {
 
 .platform-comparison-image {
     width: 100%;
+    max-width: 892px;
+    margin: 0 auto;
     border-radius: 32px;
     overflow: hidden;
     height: 438px;
@@ -1273,7 +1295,8 @@ body {
     margin-top: 20px;
 }
 
-@media (max-width: 768px) {
+/* Мобильная и планшетная вёрстка: до десктопа (1024px) */
+@media (max-width: 912px) {
     /* Index: header, hero, case card, footer */
     .header {
         padding: 24px 20px;
@@ -1421,14 +1444,6 @@ body {
         flex-direction: column;
         align-items: stretch;
         gap: 0;
-    }
-
-    .case-hero-gradient {
-        width: 560px;
-        height: 560px;
-        left: 50%;
-        top: -280px;
-        transform: translateX(-50%);
     }
 
     .case-hero-content {
@@ -1721,20 +1736,12 @@ body {
         padding: 40px 20px 60px;
 
     }
-    .platform-comparison-image {
-        background-size: cover;
-        background-position: center;
-        background-image: url(images/block9-10-mobile.png);
-        height: 640px;
-        width: 320px;
-        margin: 0 auto;
-    }
+
 
     .design-system-image-container {
         padding: 40px 0;
     }
 
-    /* CTA — мобильная версия по макету Figma (node 303-1873), фон cta-background-mobile.png */
     .case-section-cta {
         padding: 40px 20px;
     }
@@ -1817,15 +1824,120 @@ body {
     .role-sublist li {
         font-size: 16px;
     }
+
+    .case-cta-card {
+        background-image: url("images/cta-background-tablet.png");
+    }
+
+    .platform-comparison-image {
+        background-image: url("images/block9-10-tablet.png");
+        height: 640px;
+    }
 }
 
-/* При ширине экрана ≤360px — states-mapping-mobile.png 320×313 */
+/* Планшет: та же вёрстка, отступы 40px */
+@media (min-width: 640px) and (max-width: 911px) {
+    .header {
+        padding: 24px 40px;
+    }
+
+    .hero {
+        padding: 0 40px 60px 40px;
+    }
+
+    .main > .case-section {
+        padding: 40px 40px;
+    }
+
+    .footer {
+        padding: 30px 40px;
+    }
+
+    .case-section {
+        padding: 40px 40px 48px;
+    }
+
+    .case-section-learnings {
+        padding: 40px 40px 60px;
+    }
+
+    .case-hero {
+        padding: 40px 40px 32px;
+    }
+
+    .overview-section {
+        padding: 40px 40px 48px;
+    }
+
+    .case-section-image {
+        padding: 40px 40px 48px;
+    }
+
+    .case-image-row-full {
+        padding: 40px 40px 60px;
+    }
+
+    .case-image-row-centered {
+        padding: 0 40px;
+    }
+
+    .platform-comparison-section {
+        padding: 40px 40px 60px;
+    }
+
+    .case-section-cta {
+        padding: 40px 40px;
+    }
+
+    .challenge-card {
+        padding: 24px 40px;
+    }
+
+    .design-section-divider {
+        width: calc(100% - 80px);
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .platform-images-row-three {
+        margin-right: -40px;
+        width: calc(100% + 40px);
+    }
+
+    .case-image-row-two {
+        margin-right: -40px;
+        width: calc(100% + 40px);
+    }
+}
+
+/* Малый мобильный: точечные правки для очень узких экранов */
 @media (max-width: 360px) {
+    .case-hero-gradient {
+        width: 960px;
+        height: 960px;
+        left: 90%;
+        top: -480px;
+        transform: translateX(-50%);
+    }
+
     .states-mapping-image {
         background-image: url('./images/states-mapping-mobile.png');
         width: 320px;
         max-width: 100%;
         height: 313px;
         padding-bottom: 0;
+    }
+
+    .case-cta-card {
+        background-image: url("images/cta-background-mobile.png");
+    }
+
+    .platform-comparison-image {
+        background-size: cover;
+        background-position: center;
+        background-image: url(images/block9-10-mobile.png);
+        height: 640px;
+        width: 320px;
+        margin: 0 auto;
     }
 }
