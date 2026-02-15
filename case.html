@@ -156,14 +156,14 @@
             <div class="case-section-content">
                 <h2 class="case-section-title" data-i18n="case.challenge.title">Challenge</h2>
                 <div class="challenge-grid">
-                    <div class="challenge-card">
+                    <a href="#results-impact" class="challenge-card">
                         <h3 class="challenge-card-title" data-i18n="case.challenge.problem.title">Problem</h3>
                         <p class="challenge-card-text" data-i18n="case.challenge.problem.text">Users often lose interest in their order after placing it – they don't know when it will be ready, packed, or shipped. This lack of transparency leads to support calls, negative reviews, and reduced customer loyalty.</p>
-                    </div>
-                    <div class="challenge-card">
+                    </a>
+                    <a href="#results-impact" class="challenge-card">
                         <h3 class="challenge-card-title" data-i18n="case.challenge.objective.title">Objective</h3>
                         <p class="challenge-card-text" data-i18n="case.challenge.objective.text">Implement Live Activities that keep users informed about their order status without requiring them to open the app – even when the device is locked or the app is running in the background.</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -189,7 +189,7 @@
                 </ul>
                 
                 <div class="design-summary">
-                    <div class="design-summary-line"></div>
+                    <div class="wavy-line"></div>
                     <div class="design-summary-content">
                         <h4 class="design-summary-title" data-i18n="case.process.chapter1.summary.title">Summary</h4>
                         <p class="design-summary-text" data-i18n="case.process.chapter1.summary.text">The knowledge gained during the research stage became the foundation for all subsequent stages.</p>
@@ -214,8 +214,8 @@
                 </div>
             </div>
             
-            <div class="case-image-row case-image-row-full">
-                <img src="images/states-mapping.png" alt="Order statuses flow" class="natural-size">
+            <div class="platform-section-margin states-mapping-image">
+                <!-- <img src="images/states-mapping.png" alt="Order statuses flow"> -->
             </div>
             
             <div class="case-section-content">
@@ -244,7 +244,7 @@
                         <span class="design-chapter-title" data-i18n="case.process.chapter3.title">Platform-Specific Design</span>
                     </div>
                     
-                    <div class="platform-section">
+                    <div class="platform-section-margin-first">
                         <h3 class="platform-subtitle" data-i18n="case.process.chapter3.ios.title">IOS:</h3>
                         <div class="platform-list">
                             <p data-i18n="case.process.chapter3.ios.item1"><strong>1.</strong> Live Activities are available starting from iOS 16.1;</p>
@@ -264,13 +264,13 @@
                 </div>
             </div>
             
-            <div class="platform-images-row">
+            <div class="platform-images-row platform-images-row-three">
                 <img src="./images/block9-1.png" alt="Compact presentation">
                 <img src="./images/block9-2.png" alt="Minimal presentation">
                 <img src="./images/block9-3.png" alt="Expanded presentation">
             </div>
             
-            <div class="case-section-content">
+            <div class="case-section-content platform-section-margin">
                 <p class="design-chapter-text" data-i18n="case.process.chapter3.expanded.text"><strong>The Expanded mode</strong> retains all elements, similar to the Live Activity on the Lock Screen, with minor adjustments aligned with Apple's Human Interface Guidelines (HIG):</p>
                 
                 <ul class="role-sublist">
@@ -279,18 +279,8 @@
                     <li><span data-i18n="case.process.chapter3.expanded.item3">A more compact logo</span></li>
                 </ul>
             </div>
-        </section>
-
-        <!-- Platform Comparison Image -->
-        <section class="platform-comparison-section">
-            <div class="platform-comparison-image">
-                <img src="images/block9-10.png" alt="Live Activity on Lock Screen and Expanded presentation">
-            </div>
-        </section>
-
-        <!-- Compact and Minimal Presentation Section -->
-        <section class="case-section" style="padding-top: 0;">
-            <div class="case-section-content">
+            <div class="platform-comparison-image"></div>
+            <div class="case-section-content platform-section-margin">
                 <div class="compact-minimal-content">
                     <p class="compact-minimal-title" data-i18n="case.process.chapter3.compact.title">Compact and Minimal presentation</p>
                     <p class="design-chapter-text" data-i18n="case.process.chapter3.compact.text1">For these display modes, the goal was to ensure app recognizability and clearly indicate order progress within a very limited space.</p>
@@ -300,17 +290,13 @@
                 </div>
             </div>
                     <!-- Compact/Minimal Images -->
-        <div class="platform-images-row" style="margin-bottom: 0;">
-            <img src="./images/block9-11.png" alt="Compact presentation">
-            <img src="./images/block9-12.png" alt="Minimal presentation (attached)">
-            <img src="./images/block9-13.png" alt="Minimal presentation (detached)">
-        </div>
-        </section>
-
-        <!-- Android Section -->
-        <section class="case-section" style="padding-top: 0;">
-            <div class="case-section-content">
-                <div class="platform-section">
+            <div class="platform-images-row platform-images-row-three">
+                <img src="./images/block9-11.png" alt="Compact presentation">
+                <img src="./images/block9-12.png" alt="Minimal presentation (attached)">
+                <img src="./images/block9-13.png" alt="Minimal presentation (detached)">
+            </div>
+            <div class="case-section-content platform-section-margin">
+                <div>
                     <h3 class="platform-subtitle" data-i18n="case.process.chapter3.android.title">Android:</h3>
                     <ul class="role-sublist">
                         <li><span data-i18n="case.process.chapter3.android.item1">As mentioned earlier, Android currently does not have an official equivalent to Live Activities. However, similar functionality can be achieved using <strong>dynamic notifications.</strong></span></li>
@@ -321,10 +307,10 @@
                 </div>
             </div>
                     <!-- Android Images -->
-        <div class="case-image-row case-image-row-two" style="padding-bottom:0;margin-bottom: 0;">
-            <img src="./images/block9-14.png" alt="Collapsed state">
-            <img src="./images/block9-15.png" alt="Expanded state">
-        </div>
+            <div class="case-image-row case-image-row-two">
+                <img src="./images/block9-14.png" alt="Collapsed state">
+                <img src="./images/block9-15.png" alt="Expanded state">
+            </div>
         </section>
 
         <div class="design-section-divider"></div>
@@ -354,7 +340,7 @@
                         </div>
                         
                         <div class="design-conclusion" style="margin-top: 0;">
-                            <div class="design-summary-line"></div>
+                            <div class="wavy-line"></div>
                             <div class="design-conclusion-content">
                                 <h4 class="design-conclusion-title" data-i18n="case.process.chapter4.conclusion.title">Conclusion</h4>
                                 <p class="design-conclusion-text" data-i18n="case.process.chapter4.conclusion.text">Therefore, the best solution in this case is to use AI.</p>
@@ -365,18 +351,17 @@
                     </div>
                 </div>
             </div>
+                    <!-- AI Icons Grid -->
+            <div class="ai-icons-grid">
+                <img src="images/Right.png" alt="AI Icon 1">
+                <img src="images/Right-1.png" alt="AI Icon 2">
+                <img src="images/Right-2.png" alt="AI Icon 3">
+                <img src="images/Right-3.png" alt="AI Icon 4">
+                <img src="images/Right-4.png" alt="AI Icon 5">
+                <img src="images/Right-5.png" alt="AI Icon 6">
+                <img src="images/Right-6.png" alt="AI Icon 7">
+            </div>
         </section>
-
-        <!-- AI Icons Grid -->
-        <div class="ai-icons-grid">
-            <img src="images/Right.png" alt="AI Icon 1">
-            <img src="images/Right-1.png" alt="AI Icon 2">
-            <img src="images/Right-2.png" alt="AI Icon 3">
-            <img src="images/Right-3.png" alt="AI Icon 4">
-            <img src="images/Right-4.png" alt="AI Icon 5">
-            <img src="images/Right-5.png" alt="AI Icon 6">
-            <img src="images/Right-6.png" alt="AI Icon 7">
-        </div>
 
         <div class="design-section-divider"></div>
 
@@ -417,15 +402,10 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Design System Image -->
-        <div class="design-system-image-container">
-            <img src="images/block9-16.png" alt="Design System Architecture">
-        </div>
-
-        <!-- Design System Bottom Content -->
-        <section class="case-section" style="padding: 0 212px 60px;">
+                    <!-- Design System Image -->
+            <div class="design-system-image-container">
+                <img src="images/block9-16.png" alt="Design System Architecture">
+            </div>
             <div class="case-section-content">
                 <div style="display: flex; flex-direction: column; gap: 12px;">
                     <p class="design-chapter-text" data-i18n="case.process.chapter5.base.text1">It's also worth noting that each component group is built upon its own base component, which encapsulates shared logic, data structure, and core behavior – all other variants inherit from this base.</p>
@@ -490,7 +470,7 @@
         <div class="design-section-divider"></div>
 
         <!-- Chapter 07: Learnings -->
-        <section class="case-section" style="padding: 60px 212px 60px;">
+        <section class="case-section case-section-learnings">
             <div class="case-section-content">
                 <div class="design-chapter">
                     <div class="design-chapter-header">

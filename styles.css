@@ -375,333 +375,7 @@ body {
 
 .footer-link:hover {
     opacity: 0.6;
-}
-
-/* Responsive */
-/* Tablet styles (640px - 1024px) */
-@media (min-width: 640px) and (max-width: 1024px) {
-    body {
-        /* Не сжимаем всю страницу до 640px на широких планшетах (например 1008px),
-           иначе фоновые элементы (градиент) будут обрезаться по краю body. */
-        max-width: 100%;
-        margin: 0;
-    }
-    
-    .header {
-        padding: 24px 20px;
-        max-width: 1200px;
-        width: 100%;
-    }
-    
-    .main {
-        /* На 1008px (и близко) оставляем контейнер по ширине экрана,
-           а не фиксируем в 640px. */
-        max-width: 1200px;
-        width: 100%;
-    }
-    
-    .hero {
-        height: 712px;
-        min-height: 712px;
-        padding: 0;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-    
-    .hero-content {
-        padding: 0 40px 60px 40px;
-        width: 100%;
-        max-width: 640px;
-        justify-content: center;
-    }
-    
-    .hero-title {
-        font-size: 50px;
-        line-height: 1.1;
-        letter-spacing: -0.01em;
-        width: 507px;
-        max-width: 100%;
-    }
-    
-    .hero-description {
-        width: 507px;
-        max-width: 100%;
-    }
-    
-    .hero-note {
-        width: 593px;
-        max-width: 100%;
-    }
-    
-    .gradient-blur {
-        width: 640px;
-        height: 640px;
-        /* Всегда помещаем круг целиком внутри контейнера на 640–1024px */
-        left: calc(100% - 640px);
-        top: 16px;
-        transform: none;
-        position: absolute;
-    }
-    
-    .main > .case-section {
-        padding: 40px;
-        max-width: 640px;
-        margin: 0 auto;
-        width: 100%;
-    }
-    
-    .case-card {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 40px 20px;
-        padding: 0;
-        align-items: center;
-        justify-content: flex-start;
-        width: 100%;
-    }
-    
-    .case-description {
-        flex: 1 0 0;
-        min-width: 0;
-        padding: 10px 0 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
-    
-    .case-header {
-        display: flex;
-        gap: 40px;
-        align-items: flex-start;
-        width: 100%;
-    }
-    
-    .case-title {
-        font-size: 34px;
-        line-height: 1.1;
-        letter-spacing: -0.01em;
-        flex: 1 0 0;
-        min-width: 0;
-    }
-    
-    .case-number {
-        font-size: 34px;
-        line-height: 1.1;
-        letter-spacing: -0.01em;
-        flex-shrink: 0;
-    }
-    
-    .case-details {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        height: 126px;
-    }
-    
-    .case-image {
-        flex: 0 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 320px;
-        height: 350px;
-    }
-    
-    .case-image img {
-        width: 320px;
-        height: 350px;
-        object-fit: cover;
-        object-position: 50% 50%;
-    }
-    
-    .footer {
-        margin: 160px auto 0;
-        padding: 30px 40px;
-        max-width: 640px;
-        width: 100%;
-    }
-    
-    .footer-content {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
-    }
-}
-
-/* Styles for screens above 1024px remain unchanged */
-
-/* Styles for screens below 640px (mobile) - will override tablet styles */
-@media (max-width: 639px) {
-    body {
-        max-width: 100%;
-    }
-    
-    .hero {
-        height: 100vh;
-        min-height: 500px;
-    }
-    
-    .hero-content {
-        padding: 0 40px;
-    }
-    
-    .hero-title {
-        font-size: 48px;
-    }
-    
-    .gradient-blur {
-        width: 400px;
-        height: 400px;
-        right: -50px;
-    }
-    
-    .case-card {
-        flex-direction: column;
-        gap: 40px;
-        margin: 40px 40px 0;
-    }
-    
-    .case-description {
-        width: 100%;
-    }
-    
-    .case-image {
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .header {
-        padding: 24px 20px;
-    }
-    
-    .logo {
-        font-size: 16px;
-        max-width: 157px;
-    }
-    
-    .hero {
-        min-height: 712px;
-        padding: 0 20px 60px 20px;
-        align-items: center;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    
-    .hero-content {
-        padding: 0;
-        width: 100%;
-        /* margin: 0 auto; */
-    }
-    
-    .hero-title {
-        font-size: 50px;
-        line-height: 1.1;
-        letter-spacing: -0.01em;
-        width: 100%;
-        max-width: 100%;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-    }
-    
-    .hero-description {
-        width: 100%;
-    }
-    
-    .hero-text,
-    .hero-note {
-        font-size: 18px;
-    }
-    
-    .gradient-blur {
-        width: 640px;
-        height: 640px;
-        left: 50px;
-        top: 16px;
-        right: auto;
-    }
-    
-    .main > .case-section {
-        padding: 40px 20px;
-        max-width: 360px;
-        margin: 0 auto;
-    }
-    
-    .case-card {
-        flex-wrap: wrap;
-        gap: 40px 60px;
-        padding: 0;
-        width: 100%;
-        margin: 0;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .case-description {
-        width: 321px;
-        padding: 10px 0 20px;
-        margin: 0 auto;
-    }
-    
-    .case-title {
-        font-size: 34px;
-        line-height: 1.1;
-        letter-spacing: -0.01em;
-    }
-    
-    .case-number {
-        font-size: 34px;
-        line-height: 1.1;
-        letter-spacing: -0.01em;
-    }
-    
-    .case-header {
-        gap: 40px;
-    }
-    
-    .case-project {
-        gap: 10px;
-        /* не режем волну (она 62px) */
-        min-height: 62px;
-    }
-    
-    .case-image {
-        width: 320px;
-        height: 350px;
-        flex: 0 0 auto;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .case-image img {
-        width: 320px;
-        height: 350px;
-    }
-    
-    .footer {
-        margin: 120px auto 0;
-        padding: 30px 20px;
-        max-width: 360px;
-    }
-    
-    .footer-content {
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
-    }
-    
-    .footer-logo {
-        text-align: center;
-    }
-    
-    .footer-links {
-        justify-content: center;
-    }
-}
+} 
 
 /* Case Page Styles */
 .case-main {
@@ -782,6 +456,10 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.case-section-learnings {
+    padding: 60px 212px 60px;
 }
 
 .case-section-content {
@@ -1036,8 +714,6 @@ body {
 .case-image-row {
     display: flex;
     gap: 8px;
-    margin: 40px 0 60px;
-    padding: 0 154px;
 }
 
 .case-image-row-full {
@@ -1049,10 +725,6 @@ body {
     width: 100%;
     height: auto;
     object-fit: contain;
-}
-
-.case-image-row-full img.natural-size {
-    width: auto;
 }
 
 .case-image-row-centered {
@@ -1184,6 +856,15 @@ body {
     flex-direction: column;
     gap: 15px;
     align-self: stretch;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.challenge-card:hover {
+    border-color: #d4d4e2;
+    background-color: #fafafa;
 }
 
 .challenge-card-title {
@@ -1273,6 +954,8 @@ body {
     font-size: 30px;
     line-height: 1.4;
     color: #181818;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .design-chapter-title {
@@ -1350,12 +1033,11 @@ body {
 }
 
 .design-section-divider {
-    width: 775px;
-    max-width: calc(100% - 424px);
-    height: 1px;
+    width: calc(100% - 80px);
+    max-width: 775px;
+    margin: 0 auto;
+    height: 1.5px;
     background: #d4d4e2;
-    margin: 60px auto 0;
-    margin-top: 0;
 }
 
 .design-summary-content,
@@ -1391,9 +1073,17 @@ body {
     margin: 60px auto;
 }
 
-/* Platform Section */
-.platform-section {
-    margin: 20px 0;
+.states-mapping-image {
+    display: block;
+    background-image: url('./images/states-mapping.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 100%;
+    /* При 640px ширина экрана → ширина блока 560px (87.5vw), высота ≈100px */
+    max-width: min(1040px, 87.5vw);
+    height: 0;
+    padding-bottom: calc(100 / 560 * 100%);
 }
 
 /* Compact and Minimal Content */
@@ -1403,7 +1093,6 @@ body {
     gap: 12px;
     align-items: flex-start;
     max-width: 695px;
-    margin-bottom: 40px;
     text-align: left;
 }
 
@@ -1422,7 +1111,6 @@ body {
     gap: 8px;
     justify-content: center;
     align-items: center;
-    margin: 20px 0 60px;
       /* Делаем блок шириной во весь экран */
    position: relative;
    left: 50%;
@@ -1441,20 +1129,27 @@ body {
     border: 2px solid #f0f0f0;
 }
 
+.platform-section-margin-first{
+    margin-bottom: 40px;
+}
+
+.platform-section-margin {
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+
 .platform-subtitle {
     font-family: 'Noto Serif Display', serif;
-    font-weight: 600;
     font-size: 20px;
     line-height: 1.1;
     color: #181818;
-    margin-bottom: 8px;
 }
 
 .platform-list {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin: 8px 0;
+    margin: 12px 0;
 }
 
 .platform-list p {
@@ -1471,7 +1166,7 @@ body {
     flex-wrap: wrap;
     gap: 16px;
     justify-content: center;
-    margin: 40px 0 60px;
+    margin: 40px 0 0;
     padding: 0 154px;
 }
 
@@ -1487,7 +1182,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin: 20px 0;
+    margin: 20px 0 0;
 }
 
 .design-system-subtitle {
@@ -1500,7 +1195,6 @@ body {
 
 .design-system-image-container {
     padding: 40px 154px 60px;
-    padding-top: 0;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -1526,6 +1220,10 @@ body {
     width: 100%;
     border-radius: 32px;
     overflow: hidden;
+    height: 438px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/block9-10.png);
 }
 
 .platform-comparison-image img {
@@ -1533,6 +1231,7 @@ body {
     height: auto;
     display: block;
     object-fit: cover;
+    display: none;
 }
 
 /* Results Section */
@@ -1574,101 +1273,147 @@ body {
     margin-top: 20px;
 }
 
-/* Responsive for Case Page */
-@media (max-width: 1024px) {
-    .case-hero {
-        padding: 60px 40px;
-        flex-direction: column;
-        min-height: auto;
-    }
-    
-    .case-hero-gradient {
-        left: -193px;
-        top: -553px;
-    }
-    
-    .case-hero-title {
-        font-size: 48px;
-    }
-    
-    .case-section {
-        padding: 40px 40px;
-    }
-    
-    .overview-section {
-        padding: 40px 40px;
-    }
-    
-    .overview-grid {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .overview-left { order: 1; }
-    .overview-right { order: 2; }
-    .overview-section .overview-button { order: 3; }
-    
-    .overview-right {
-        border-left: none;
-        border-top: 1px solid #7f7f8d;
-        padding-top: 20px;
-    }
-    
-    .overview-table-row-top {
-        flex-direction: column;
-    }
-    
-    .overview-table-cell {
-        border-right: none;
-        border-bottom: 1px solid #7f7f8d;
-    }
-    
-    .overview-table-cell:last-child {
-        border-bottom: none;
-    }
-    
-    .challenge-grid {
-        flex-direction: column;
-    }
-    
-    .case-image-row,
-    .case-image-grid {
-        flex-direction: column;
-        padding: 0 20px;
-    }
-    
-    .case-image-row-full {
-        padding: 40px 40px 60px;
-    }
-    
-    .case-image-row-centered {
-        padding: 40px 40px 60px;
-    }
-    
-    .case-image-row-two img {
-        width: 100%;
-        max-width: 442px;
-    }
-    
-    .platform-images-row {
-        padding: 40px 40px 60px;
-        flex-direction: column;
-    }
-    
-    .platform-images-row img {
-        max-width: 100%;
-    }
-    
-    .platform-comparison-section {
-        padding: 40px 40px 60px;
-    }
-    
-    .design-system-image-container {
-        padding: 40px 40px 60px;
-    }
-}
-
 @media (max-width: 768px) {
+    /* Index: header, hero, case card, footer */
+    .header {
+        padding: 24px 20px;
+    }
+
+    .logo {
+        font-size: 16px;
+        max-width: 157px;
+    }
+
+    .hero {
+        min-height: 712px;
+        padding: 0 20px 60px 20px;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero-content {
+        padding: 0;
+        width: 100%;
+    }
+
+    .hero-title {
+        font-size: 50px;
+        line-height: 1.1;
+        letter-spacing: -0.01em;
+        width: 100%;
+        max-width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .hero-description {
+        width: 100%;
+    }
+
+    .hero-text,
+    .hero-note {
+        font-size: 18px;
+    }
+
+    .gradient-blur {
+        width: 640px;
+        height: 640px;
+        left: 50px;
+        top: 16px;
+        right: auto;
+    }
+
+    .main > .case-section {
+        padding: 40px 20px;
+        margin: 0 auto;
+    }
+
+    .case-card {
+        flex-wrap: wrap;
+        gap: 40px 60px;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .case-description {
+        width: 321px;
+        padding: 10px 0 20px;
+        margin: 0 auto;
+    }
+
+    .case-title {
+        font-size: 34px;
+        line-height: 1.1;
+        letter-spacing: -0.01em;
+    }
+
+    .case-number {
+        font-size: 34px;
+        line-height: 1.1;
+        letter-spacing: -0.01em;
+    }
+
+    .case-header {
+        gap: 40px;
+    }
+
+    .case-project {
+        gap: 10px;
+        min-height: 62px;
+    }
+
+    .case-image {
+        width: 320px;
+        height: 350px;
+        flex: 0 0 auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .case-image img {
+        width: 320px;
+        height: 350px;
+    }
+
+    .footer {
+        margin: 120px auto 0;
+        padding: 30px 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .footer-logo {
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    /* Case page: единые отступы секций по макету Figma (301-91, 301-129) */
+    .case-section {
+        padding: 40px 20px 48px;
+    }
+
+    .case-section-content {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .case-section-learnings {
+        padding: 40px 20px 60px;
+    }
+
     /* Case Hero — мобильная версия по макету Figma (node 289-52) */
     .case-hero {
         padding: 40px 20px 32px;
@@ -1676,6 +1421,14 @@ body {
         flex-direction: column;
         align-items: stretch;
         gap: 0;
+    }
+
+    .case-hero-gradient {
+        width: 560px;
+        height: 560px;
+        left: 50%;
+        top: -280px;
+        transform: translateX(-50%);
     }
 
     .case-hero-content {
@@ -1823,30 +1576,256 @@ body {
         margin-bottom: 8px;
     }
 
+    .design-chapter-header {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
     .design-chapter-number,
     .design-chapter-title {
         font-size: 24px;
     }
 
-    .case-image-row,
-    .case-image-grid,
-    .ai-icons-grid {
+    .design-chapter-number {
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .design-chapter-title {
+        min-width: 0;
+        word-wrap: break-word;
+    }
+
+    /* Секция с изображением (block3-4) — мобильное */
+    .case-section-image {
+        padding: 40px 20px 48px;
+    }
+
+    .case-image-full {
+        padding: 0;
+        border-radius: 24px;
+        overflow: hidden;
+    }
+
+    .case-image-full img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .case-image-row-full {
+        padding: 40px 20px 60px;
+    }
+
+    .case-image-row-centered {
+        margin-top: 24px;
         padding: 0 20px;
+    }
+
+    .platform-images-row {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .platform-images-row img {
+        width: 271px;
+        height: 180px;
+        aspect-ratio: 134/89;
+        flex: none;
+        border: none;
+    }
+
+    .platform-images-row-three {
+        overflow-x: auto;
+        justify-content: flex-start;
+        margin-right: -20px;
+        width: calc(100% + 20px);
+    }
+
+    .case-image-row-centered img {
+        width: 100%;
+        max-width: 100%;
+        height: 183px;
+    }
+
+    .case-image-row-two {
+        overflow-x: auto;
+        justify-content: flex-start;
+        /* На мобильном тоже вплотную до правого края экрана */
+        margin-right: -20px;
+        width: calc(100% + 20px);
+    }
+
+    .case-image-row-two img {
+        /* width: 100%; */
+        /* max-width: 100%; */
+        width: 288px;
+        height: 300px;
+        aspect-ratio: 24/25;
+    }
+
+    /* AI Assets — мобильная версия по макету Figma (node 301-91): текст, критерии, Conclusion */
+    .design-chapter {
+        gap: 16px;
+    }
+
+    .design-chapter-text {
+        font-size: 16px;
+        line-height: 1.3;
+        max-width: 100%;
+    }
+
+    .design-summary,
+    .design-conclusion {
+        margin-top: 16px;
+        gap: 16px;
+    }
+
+    .design-summary-content,
+    .design-conclusion-content {
+        max-width: 100%;
+    }
+
+    .compact-minimal-content {
+        max-width: 100%;
+        margin-bottom: 24px;
+    }
+
+    /* Сетка иконок AI — мобильная версия по макету Figma (node 301-129): 3 колонки, 3+3+1 */
+    .ai-icons-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 0;
+    }
+
+    .ai-icons-grid img {
+        width: 94px;
+        height: 75px;
+        flex: 0 0 auto;
     }
 
     .design-divider {
         width: 100%;
     }
 
-    .platform-images-row {
-        padding: 40px 20px 60px;
+    .design-section-divider {
+        width: calc(100% - 80px);
+        max-width: none;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     .platform-comparison-section {
         padding: 40px 20px 60px;
+
+    }
+    .platform-comparison-image {
+        background-size: cover;
+        background-position: center;
+        background-image: url(images/block9-10-mobile.png);
+        height: 640px;
+        width: 320px;
+        margin: 0 auto;
     }
 
     .design-system-image-container {
-        padding: 40px 20px 60px;
+        padding: 40px 0;
+    }
+
+    /* CTA — мобильная версия по макету Figma (node 303-1873), фон cta-background-mobile.png */
+    .case-section-cta {
+        padding: 40px 20px;
+    }
+
+    .case-cta-card {
+        background-image: url("images/cta-background-mobile.png");
+        background-size: cover;
+        background-position: center;
+        border-radius: 24px;
+        padding: 40px 24px 32px;
+        min-height: auto;
+        height: 640px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .case-cta-content {
+        width: 100%;
+        max-width: 100%;
+        gap: 24px;
+    }
+
+    .case-cta-text-container {
+        gap: 16px;
+    }
+
+    .case-cta-title {
+        font-size: 28px;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        max-width: 100%;
+    }
+
+    .case-cta-text {
+        font-size: 16px;
+        line-height: 1.3;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .case-section-cta .case-button-cta {
+        align-self: flex-start;
+    }
+
+    /* Challenge — мобильное */
+    .challenge-grid {
+        flex-direction: column;
+        margin: 20px 0 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .challenge-card {
+        padding: 24px 20px;
+    }
+
+    .challenge-card-title {
+        font-size: 24px;
+    }
+
+    /* Results & Impact, Learnings — мобильное */
+    .results-section {
+        gap: 16px;
+    }
+
+    .results-subtitle,
+    .results-subtitle-large {
+        font-size: 16px;
+    }
+
+    .role-list {
+        margin-top: 16px;
+    }
+
+    .role-ordered-list {
+        gap: 12px;
+    }
+
+    .role-ordered-list li,
+    .role-sublist li {
+        font-size: 16px;
+    }
+}
+
+/* При ширине экрана ≤360px — states-mapping-mobile.png 320×313 */
+@media (max-width: 360px) {
+    .states-mapping-image {
+        background-image: url('./images/states-mapping-mobile.png');
+        width: 320px;
+        max-width: 100%;
+        height: 313px;
+        padding-bottom: 0;
     }
 }
