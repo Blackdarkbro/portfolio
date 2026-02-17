@@ -889,11 +889,6 @@ body.page-case .lang-switcher {
     transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
-.challenge-card:hover {
-    border-color: #d4d4e2;
-    background-color: #fafafa;
-}
-
 .challenge-card-title {
     font-family: 'Noto Serif Display', serif;
     font-weight: 600;
@@ -1202,7 +1197,6 @@ body.page-case .lang-switcher {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin: 20px 0 0;
 }
 
 .design-system-subtitle {
