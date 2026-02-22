@@ -1,0 +1,215 @@
+/* ==========================================================================
+   Общие стили (header, footer, main, переключатель языка)
+   Подключаются на index.html и case.html
+   ========================================================================== */
+
+/* Reset & Base */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "IBM Plex Mono", monospace;
+    background-color: #F4F3F3;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #181818;
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Breakpoints */
+:root {
+    --bp-mobile: 360px;
+    --bp-tablet: 640px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: #181818;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.header-right {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+/* Language Switcher */
+.lang-switcher {
+    display: flex;
+    background: rgba(212, 212, 226, 0.4);
+    border-radius: 47px;
+    padding: 2px;
+    width: 120px;
+    height: 40px;
+}
+
+/* Страница кейса: другой фон переключателя языка */
+body.page-case .lang-switcher {
+    background: rgba(255, 255, 255, 0.45);
+}
+
+.lang-btn {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    color: #63616b;
+    background: transparent;
+    border: none;
+    border-radius: 33px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.lang-btn.active {
+    background: #FFFFFF;
+    font-weight: 600;
+    color: #181818;
+}
+
+.lang-btn:hover:not(.active) {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Main */
+.main {
+    padding: 0 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Разделитель между карточками кейсов на главной */
+.design-section-divider {
+    height: 0;
+    border-top: 1px solid #d4d4e2;
+    margin: 0 40px;
+}
+
+.wavy-line {
+    width: 16px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    align-self: stretch;
+}
+
+.wavy-line::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("../images/wavex.png");
+    background-repeat: repeat-y;
+    background-position: center top;
+    background-size: 20px 13px;
+    pointer-events: none;
+}
+
+/* Footer */
+.footer {
+    padding: 30px 40px;
+    border-top: 1px solid #D4D4E2;
+    max-width: 1200px;
+    margin: 160px auto 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-logo {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.1;
+    color: #181818;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.footer-logo:hover {
+    opacity: 0.6;
+}
+
+.footer-links {
+    display: flex;
+    gap: 26px;
+}
+
+.footer-link {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1;
+    color: #181818;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.footer-link:hover {
+    opacity: 0.6;
+}
+
+/* --- Общие медиа (header, main, footer) --- */
+@media (max-width: 786px) {
+
+    .header {
+        padding: 24px 20px;
+    }
+
+    .main {
+        padding: 0 40px;
+    }
+
+    .footer-logo {
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        padding: 0 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+}

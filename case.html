@@ -6,8 +6,9 @@
     <title>Live Activity for iOS & Android | Valeryia Bulakhava</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Serif+Display:wght@600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=Noto+Serif+Display:wght@600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/case.css">
 </head>
 <body class="page-case">
     <!-- Header -->
@@ -31,7 +32,7 @@
             <div class="case-hero-content">
                 <div class="case-hero-text">
                     <h1 class="case-hero-title" data-i18n="case.hero.title">Live activity for IOS & Android</h1>
-                    <p class="case-hero-subtitle" data-i18n="case.hero.subtitle">Designed real-time order tracking on the lock screen for instant status updates</p>
+                    <p data-i18n="case.hero.subtitle">Designed real-time order tracking on the lock screen for instant status updates</p>
                 </div>
                 <div class="case-hero-image">
                     <img src="images/4x.png" alt="Live Activity Preview">
@@ -101,12 +102,12 @@
         <section class="case-section">
             <div class="case-section-content">
                 <h2 class="case-section-title" data-i18n="case.role.title">My role on the project</h2>
-                <p class="case-section-intro" data-i18n="case.role.intro">I leveraged Human-Centered Design principles to address complex challenges<br> by understanding business requirements, customer pain points, user journeys,<br> and feedback.</p>
+                <p class="case-section-intro" data-i18n="case.role.intro">I leveraged Human-Centered Design principles to address complex challenges by understanding business requirements, customer pain points, user journeys, and feedback.</p>
                 <div class="role-list">
                     <ol class="role-ordered-list">
                         <li>
                             <strong data-i18n="case.role.flows.title">Designed Key User Flows</strong>
-                            <p data-i18n="case.role.flows.intro">I designed and optimized end-to-end user journeys, including:</p>
+                            <p style="margin-bottom: 8px;" data-i18n="case.role.flows.intro">I designed and optimized end-to-end user journeys, including:</p>
                             <ul class="role-sublist">
                                 <li><span data-i18n="case.role.flows.item1"><b>Live Activity</b> – designed real-time order tracking on the lock screen for instant status updates.</span></li>
                                 <li><span data-i18n="case.role.flows.item2"><b>Smart search with suggestions</b> – implemented AI-powered search with history, popular queries, and typo tolerance for faster discovery.</span></li>
@@ -158,11 +159,11 @@
                 <div class="challenge-grid">
                     <a class="challenge-card">
                         <h3 class="challenge-card-title" data-i18n="case.challenge.problem.title">Problem</h3>
-                        <p class="challenge-card-text" data-i18n="case.challenge.problem.text">Users often lose interest in their order after placing it – they don't know when it will be ready, packed, or shipped. This lack of transparency leads to support calls, negative reviews, and reduced customer loyalty.</p>
+                        <p data-i18n="case.challenge.problem.text">Users often lose interest in their order after placing it – they don't know when it will be ready, packed, or shipped. This lack of transparency leads to support calls, negative reviews, and reduced customer loyalty.</p>
                     </a>
                     <a class="challenge-card">
                         <h3 class="challenge-card-title" data-i18n="case.challenge.objective.title">Objective</h3>
-                        <p class="challenge-card-text" data-i18n="case.challenge.objective.text">Implement Live Activities that keep users informed about their order status without requiring them to open the app – even when the device is locked or the app is running in the background.</p>
+                        <p data-i18n="case.challenge.objective.text">Implement Live Activities that keep users informed about their order status without requiring them to open the app – even when the device is locked or the app is running in the background.</p>
                     </a>
                 </div>
             </div>
@@ -178,22 +179,21 @@
                     <span class="design-chapter-number">[ 01 ]</span>
                     <span class="design-chapter-title" data-i18n="case.process.chapter1.title">UX research</span>
                 </div>
-                
-                <p class="design-chapter-text" data-i18n="case.process.chapter1.text1">Live Activity is a native iOS feature provided by Apple, and at the time of this feature's development, there is no official Android equivalent.</p>
-                
-                <p class="design-chapter-text" data-i18n="case.process.chapter1.text2">Therefore, during the research phase, I identified <strong>two main objectives:</strong></p>
-                
-                <ul class="role-sublist">
-                    <li><span data-i18n="case.process.chapter1.item1">Thoroughly <strong>examine all the nuances</strong> of how Live Activity is displayed and how it works on IOS, so that during the design process I could propose the most relevant and effective solutions, as well as account for all its specifics</span></li>
-                    <li><span data-i18n="case.process.chapter1.item2">Investigate <strong>how this functionality could be implemented for Android.</strong></span></li>
-                </ul>
-                
-                <div class="design-summary">
-                    <div class="wavy-line"></div>
-                    <div class="design-summary-content">
-                        <h4 class="design-summary-title" data-i18n="case.process.chapter1.summary.title">Summary</h4>
-                        <p class="design-summary-text" data-i18n="case.process.chapter1.summary.text">The knowledge gained during the research stage became the foundation for all subsequent stages.</p>
-                    </div>
+                <div class="design-chapter-text-container">
+                    <p  data-i18n="case.process.chapter1.text1">Live Activity is a native iOS feature provided by Apple, and at the time of this feature's development, there is no official Android equivalent.</p>
+                    <p  data-i18n="case.process.chapter1.text2">Therefore, during the research phase, I identified <strong>two main objectives:</strong></p>
+                    
+                    <ul class="role-sublist">
+                        <li><span data-i18n="case.process.chapter1.item1">Thoroughly <strong>examine all the nuances</strong> of how Live Activity is displayed and how it works on IOS, so that during the design process I could propose the most relevant and effective solutions, as well as account for all its specifics</span></li>
+                        <li><span data-i18n="case.process.chapter1.item2">Investigate <strong>how this functionality could be implemented for Android.</strong></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="design-summary">
+                <div class="wavy-line"></div>
+                <div class="design-summary-content">
+                    <h4 class="design-summary-title" data-i18n="case.process.chapter1.summary.title">Summary</h4>
+                    <p data-i18n="case.process.chapter1.summary.text">The knowledge gained during the research stage became the foundation for all subsequent stages.</p>
                 </div>
             </div>
         </div>
@@ -210,17 +210,17 @@
                         <span class="design-chapter-title" data-i18n="case.process.chapter2.title">User Scenarios & States Mapping</span>
                     </div>
                     
-                    <p class="design-chapter-text" data-i18n="case.process.chapter2.text1">When making a purchase, the order goes through specific statuses within the app, and all of these statuses have been implemented in Live Activities:</p>
+                    <p data-i18n="case.process.chapter2.text1">When making a purchase, the order goes through specific statuses within the app, and all of these statuses have been implemented in Live Activities:</p>
                 </div>
             </div>
             
-            <div class="platform-section-margin states-mapping-image">
+            <div class="states-mapping-image">
                 <!-- <img src="images/states-mapping.png" alt="Order statuses flow"> -->
             </div>
             
             <div class="case-section-content">
-                <p class="design-chapter-text" data-i18n="case.process.chapter2.text2">A unique visual element was designed for each status:</p>
-                <div class="design-chapter-list-numeric" style="gap: 6px;">
+                <p style="margin-bottom: 12px;" data-i18n="case.process.chapter2.text2">A unique visual element was designed for each status:</p>
+                <div class="design-chapter-list-numeric">
                     <p data-i18n="case.process.chapter2.item1">1. Icon (see Chapter 4)</p>
                     <p data-i18n="case.process.chapter2.item2">2. Heading</p>
                     <p data-i18n="case.process.chapter2.item3">3. Text message (e.g. "Your order is on the way")</p>
@@ -251,7 +251,7 @@
                             <p data-i18n="case.process.chapter3.ios.item2"><strong>2.</strong> Live Activities support four display modes: one on the Lock Screen and three in the Dynamic Island area (on iPhone 14 Pro and newer models).</p>
                         </div>
                         
-                        <p class="design-chapter-text" style="margin-top: 12px;" data-i18n="case.process.chapter3.ios.modes.title">Display modes within the Dynamic Island:</p>
+                        <p style="margin-top: 12px;" data-i18n="case.process.chapter3.ios.modes.title">Display modes within the Dynamic Island:</p>
                         
                         <ul class="role-sublist" style="margin-top: 8px;">
                             <li><span data-i18n="case.process.chapter3.ios.modes.compact"><strong>Compact</strong> – space is allocated both to the left and right of the island.</span></li>
@@ -259,7 +259,7 @@
                             <li><span data-i18n="case.process.chapter3.ios.modes.expanded"><strong>Expanded</strong> – an expanded view that appears upon a long press or tap, or triggered by an external event.</span></li>
                         </ul>
                         
-                        <p class="design-chapter-text" style="margin-top: 12px;" data-i18n="case.process.chapter3.ios.text">It was crucial to carefully design each display mode.</p>
+                        <p style="margin-top: 8px;" data-i18n="case.process.chapter3.ios.text">It was crucial to carefully design each display mode.</p>
                     </div>
                 </div>
             </div>
@@ -271,7 +271,7 @@
             </div>
             
             <div class="case-section-content platform-section-margin">
-                <p class="design-chapter-text" data-i18n="case.process.chapter3.expanded.text"><strong>The Expanded mode</strong> retains all elements, similar to the Live Activity on the Lock Screen, with minor adjustments aligned with Apple's Human Interface Guidelines (HIG):</p>
+                <p style="margin-bottom: 8px;" data-i18n="case.process.chapter3.expanded.text"><strong>The Expanded mode</strong> retains all elements, similar to the Live Activity on the Lock Screen, with minor adjustments aligned with Apple's Human Interface Guidelines (HIG):</p>
                 
                 <ul class="role-sublist">
                     <li><span data-i18n="case.process.chapter3.expanded.item1">Increased corner radius</span></li>
@@ -282,11 +282,11 @@
             <div class="platform-comparison-image"></div>
             <div class="case-section-content platform-section-margin">
                 <div class="compact-minimal-content">
-                    <p class="compact-minimal-title" data-i18n="case.process.chapter3.compact.title">Compact and Minimal presentation</p>
-                    <p class="design-chapter-text" data-i18n="case.process.chapter3.compact.text1">For these display modes, the goal was to ensure app recognizability and clearly indicate order progress within a very limited space.</p>
-                    <p class="design-chapter-text" data-i18n="case.process.chapter3.compact.text2">The key element is a <strong>circular progress bar</strong> – an intuitive metaphor that effectively symbolizes an ongoing process.</p>
-                    <p class="design-chapter-text" data-i18n="case.process.chapter3.compact.text3"><strong>In the Minimal presentation</strong>, the app logo is placed inside the progress bar, creating a distinctive brand identifier that clearly informs the user which app the notification came from.</p>
-                    <p class="design-chapter-text" data-i18n="case.process.chapter3.compact.text4">The final result is shown below.</p>
+                    <strong data-i18n="case.process.chapter3.compact.title">Compact and Minimal presentation</strong>
+                    <p data-i18n="case.process.chapter3.compact.text1">For these display modes, the goal was to ensure app recognizability and clearly indicate order progress within a very limited space.</p>
+                    <p data-i18n="case.process.chapter3.compact.text2">The key element is a <strong>circular progress bar</strong> – an intuitive metaphor that effectively symbolizes an ongoing process.</p>
+                    <p data-i18n="case.process.chapter3.compact.text3"><strong>In the Minimal presentation</strong>, the app logo is placed inside the progress bar, creating a distinctive brand identifier that clearly informs the user which app the notification came from.</p>
+                    <p data-i18n="case.process.chapter3.compact.text4">The final result is shown below.</p>
                 </div>
             </div>
                     <!-- Compact/Minimal Images -->
@@ -296,14 +296,14 @@
                 <img src="./images/block9-13.png" alt="Minimal presentation (detached)">
             </div>
             <div class="case-section-content platform-section-margin">
-                <div>
-                    <h3 class="platform-subtitle" data-i18n="case.process.chapter3.android.title">Android:</h3>
+                <h3 class="platform-subtitle" data-i18n="case.process.chapter3.android.title">Android:</h3>
+                <div class="platform-list">
                     <ul class="role-sublist">
                         <li><span data-i18n="case.process.chapter3.android.item1">As mentioned earlier, Android currently does not have an official equivalent to Live Activities. However, similar functionality can be achieved using <strong>dynamic notifications.</strong></span></li>
                         <li><span data-i18n="case.process.chapter3.android.item2"><strong>Placement:</strong> The component resides in the notification panel, allowing users to access real-time information without opening the app.</span></li>
                         <li><span data-i18n="case.process.chapter3.android.item3"><strong>Views:</strong> It supports both collapsed and expanded states.</span></li>
                     </ul>
-                    <p class="design-chapter-text" style="margin-top: 8px;" data-i18n="case.process.chapter3.android.text">The screens can be seen below.</p>
+                    <p data-i18n="case.process.chapter3.android.text">The screens can be seen below.</p>
                 </div>
             </div>
                     <!-- Android Images -->
@@ -325,11 +325,11 @@
                     </div>
                     
                     <div style="display: flex; flex-direction: column; gap: 30px;">
-                        <div style="display: flex; flex-direction: column; gap: 20px;">
-                            <p class="design-chapter-text" data-i18n="case.process.chapter4.text1">Images in Live Activities play a crucial role – they help users understand the interface even without reading text.</p>
+                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                            <p data-i18n="case.process.chapter4.text1">Images in Live Activities play a crucial role – they help users understand the interface even without reading text.</p>
                             
-                            <div style="margin-top: 12px;">
-                                <p class="design-chapter-text" data-i18n="case.process.chapter4.text2">The following criteria were established for the icons:</p>
+                            <div>
+                                <p data-i18n="case.process.chapter4.text2">The following criteria were established for the icons:</p>
                                 <ul class="role-sublist" style="margin-top: 8px;">
                                     <li><span data-i18n="case.process.chapter4.item1"><strong>Instant recognizability:</strong> Users should immediately understand their order's current stage, even with a quick glance at the notification;</span></li>
                                     <li><span data-i18n="case.process.chapter4.item2"><strong>Consistent visual style</strong> across all icons;</span></li>
@@ -343,11 +343,11 @@
                             <div class="wavy-line"></div>
                             <div class="design-conclusion-content">
                                 <h4 class="design-conclusion-title" data-i18n="case.process.chapter4.conclusion.title">Conclusion</h4>
-                                <p class="design-conclusion-text" data-i18n="case.process.chapter4.conclusion.text">Therefore, the best solution in this case is to use AI.</p>
+                                <p data-i18n="case.process.chapter4.conclusion.text">Therefore, the best solution in this case is to use AI.</p>
                             </div>
                         </div>
                         
-                        <p class="design-chapter-text" style="margin-top: 0;" data-i18n="case.process.chapter4.text3">A unified color palette and visual style were defined, and after a few iterations, the icons below were created.</p>
+                        <p style="margin-top: 0;" data-i18n="case.process.chapter4.text3">A unified color palette and visual style were defined, and after a few iterations, the icons below were created.</p>
                     </div>
                 </div>
             </div>
@@ -375,42 +375,44 @@
                     </div>
                     
                     <div class="design-system-content">
-                        <p class="design-system-subtitle" data-i18n="case.process.chapter5.architecture.title">Component Architecture Considerations</p>
-                        <p class="design-chapter-text" data-i18n="case.process.chapter5.architecture.text">To avoid creating one monolithic "Frankenstein" component, I applied a system approach and instead of a single component, I created four smaller:</p>
-                        
-                        <div class="design-chapter-list-numeric" style="margin-top: 8px;">
-                            <p data-i18n="case.process.chapter5.architecture.item1"><strong>1.</strong> IOS Live Activity;</p>
-                            <p data-i18n="case.process.chapter5.architecture.item2"><strong>2.</strong> Android Live Activity;</p>
-                            <p data-i18n="case.process.chapter5.architecture.item3"><strong>3.</strong> Dynamic Island Minimal (encompassing three states: Compact, Minimal Attached, and Minimal Detached);</p>
-                            <p data-i18n="case.process.chapter5.architecture.item4"><strong>4.</strong> Dynamic Island Component (expanded view)</p>
+                        <div>
+                            <strong class="design-system-subtitle" data-i18n="case.process.chapter5.architecture.title">Component Architecture Considerations</strong>
+                            <p style="margin-bottom: 8px; margin-top: 12px;" data-i18n="case.process.chapter5.architecture.text">To avoid creating one monolithic "Frankenstein" component, I applied a system approach and instead of a single component, I created four smaller:</p>
+                            <div class="design-chapter-list-numeric">
+                                <p data-i18n="case.process.chapter5.architecture.item1"><strong>1.</strong> IOS Live Activity;</p>
+                                <p data-i18n="case.process.chapter5.architecture.item2"><strong>2.</strong> Android Live Activity;</p>
+                                <p data-i18n="case.process.chapter5.architecture.item3"><strong>3.</strong> Dynamic Island Minimal (encompassing three states: Compact, Minimal Attached, and Minimal Detached);</p>
+                                <p data-i18n="case.process.chapter5.architecture.item4"><strong>4.</strong> Dynamic Island Component (expanded view)</p>
+                            </div>
                         </div>
-                        
-                        <div style="margin-top: 20px;">
-                            <p class="design-system-subtitle" data-i18n="case.process.chapter5.benefits.title">What does this give us?</p>
-                            <p class="design-chapter-text" style="margin-top: 8px;" data-i18n="case.process.chapter5.benefits.text">This approach makes our system <strong>more flexible and easily scalable.</strong></p>
-                        </div>
-                        
-                        <p class="design-chapter-text" style="margin-top: 12px;" data-i18n="case.process.chapter5.variations.text">Live Activities are also an example of a feature that <strong>requires platform-specific component variations.</strong> While each version conveys the same core information, it operates within its own platform-specific environment and constraints.</p>
-                        
-                        <div style="margin-top: 12px;">
-                            <p class="design-chapter-text" data-i18n="case.process.chapter5.properties.title">The primary properties driving these components are:</p>
-                            <ul class="role-sublist" style="margin-top: 8px;">
-                                <li><span data-i18n="case.process.chapter5.properties.item1">Delivery type (Planned, Express, Pickup);</span></li>
-                                <li><span data-i18n="case.process.chapter5.properties.item2">Order status.</span></li>
-                            </ul>
+                        <div class="design-system-content-item">
+                            <div class="design-system-content-item-title">
+                                <strong class="design-system-subtitle" data-i18n="case.process.chapter5.benefits.title">What does this give us?</strong>
+                                <p data-i18n="case.process.chapter5.benefits.text">This approach makes our system <strong>more flexible and easily scalable.</strong></p>
+                            </div>
+                            
+                            <p data-i18n="case.process.chapter5.variations.text">Live Activities are also an example of a feature that <strong>requires platform-specific component variations.</strong> While each version conveys the same core information, it operates within its own platform-specific environment and constraints.</p>
+                            
+                            <div>
+                                <p data-i18n="case.process.chapter5.properties.title">The primary properties driving these components are:</p>
+                                <ul class="role-sublist" style="margin-top: 8px;">
+                                    <li><span data-i18n="case.process.chapter5.properties.item1">Delivery type (Planned, Express, Pickup);</span></li>
+                                    <li><span data-i18n="case.process.chapter5.properties.item2">Order status.</span></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
                     <!-- Design System Image -->
-            <div class="design-system-image-container">
-                <img src="images/block9-16.png" alt="Design System Architecture">
+                <div class="design-system-image-container">
+                    <img src="images/block9-16.png" alt="Design System Architecture">
             </div>
             <div class="case-section-content">
                 <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <p class="design-chapter-text" data-i18n="case.process.chapter5.base.text1">It's also worth noting that each component group is built upon its own base component, which encapsulates shared logic, data structure, and core behavior – all other variants inherit from this base.</p>
-                    <p class="design-chapter-text" data-i18n="case.process.chapter5.base.text2">In turn, this base component is composed of even smaller, atomic elements (atoms).</p>
-                    <p class="design-chapter-text" data-i18n="case.process.chapter5.base.text3">Additionally, <strong>an animated prototype</strong> was developed to demonstrate transitions between states (progress changes, status updates, image swaps), and <strong>a detailed technical specification</strong> was prepared for developers.</p>
+                    <p data-i18n="case.process.chapter5.base.text1">It's also worth noting that each component group is built upon its own base component, which encapsulates shared logic, data structure, and core behavior – all other variants inherit from this base.</p>
+                    <p data-i18n="case.process.chapter5.base.text2">In turn, this base component is composed of even smaller, atomic elements (atoms).</p>
+                    <p data-i18n="case.process.chapter5.base.text3">Additionally, <strong>an animated prototype</strong> was developed to demonstrate transitions between states (progress changes, status updates, image swaps), and <strong>a detailed technical specification</strong> was prepared for developers.</p>
                 </div>
             </div>
         </section>
@@ -470,7 +472,7 @@
         <div class="design-section-divider"></div>
 
         <!-- Chapter 07: Learnings -->
-        <section class="case-section case-section-learnings">
+        <section class="case-section">
             <div class="case-section-content">
                 <div class="design-chapter">
                     <div class="design-chapter-header">
@@ -480,8 +482,8 @@
                     
                     <div class="learnings-section">
                         <p class="results-subtitle" data-i18n="case.process.chapter7.guidelines.title">Deep dive into platform guidelines</p>
-                        <p class="design-chapter-text" style="margin-top: 8px;" data-i18n="case.process.chapter7.guidelines.text1">While working on Live Activities, I thoroughly studied the relevant sections of Apple's Human Interface Guidelines and Google's Material Design documentation.</p>
-                        <p class="design-chapter-text" style="margin-top: 8px;" data-i18n="case.process.chapter7.guidelines.text2">However, in this case, the guidelines became not a constraint, but a tool for crafting a high-quality user experience.</p>
+                        <p data-i18n="case.process.chapter7.guidelines.text1">While working on Live Activities, I thoroughly studied the relevant sections of Apple's Human Interface Guidelines and Google's Material Design documentation.</p>
+                        <p data-i18n="case.process.chapter7.guidelines.text2">However, in this case, the guidelines became not a constraint, but a tool for crafting a high-quality user experience.</p>
                     </div>
                 </div>
             </div>
@@ -496,7 +498,6 @@
             <a href="/" class="footer-logo" data-i18n="footer.logo">Valeryia Bulakhava | Product designer</a>
             <div class="footer-links">
                 <a href="#" class="footer-link" data-i18n="footer.linkedin">LinkedIn</a>
-                <a href="#" class="footer-link" data-i18n="footer.email">Email</a>
                 <a href="#" class="footer-link" data-i18n="footer.behance">Behance</a>
             </div>
         </div>
