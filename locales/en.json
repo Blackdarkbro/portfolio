@@ -1,5 +1,5 @@
 {
-  "header.logo": "Valeryia Bulakhava | Product designer",
+  "header.logo": "Back to Home",
   "hero.title": "Hey, I'm Valeryia.\nI'm a Product Designer",
   "hero.text": "I find <b>the sweet pot</b> where user needs and business goals meet.",
   "hero.note": "Attention to details and good time-managmenting are the key abilities, with help me in my work and live.",
@@ -140,7 +140,5 @@
   "case.process.chapter7.guidelines.text1": "While working on Live Activities, I thoroughly studied the relevant sections of Apple's Human Interface Guidelines and Google's Material Design documentation.",
   "case.process.chapter7.guidelines.text2": "However, in this case, the guidelines became not a constraint, but a tool for crafting a high-quality user experience.",
   "footer.logo": "Valeryia Bulakhava | Product designer",
-  "footer.linkedin": "Linkedin",
-  "footer.email": "Email",
-  "footer.behance": "Behance"
+  "footer.scrollTop": "Scroll to top"
 }

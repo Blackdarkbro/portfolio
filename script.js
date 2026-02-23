@@ -43,6 +43,12 @@ async function setLanguage(lang) {
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.lang === lang);
     });
+
+    const scrollTopBtn = document.querySelector('.footer-scroll-top');
+    if (scrollTopBtn && t['footer.scrollTop']) {
+        scrollTopBtn.setAttribute('aria-label', t['footer.scrollTop']);
+        scrollTopBtn.setAttribute('title', t['footer.scrollTop']);
+    }
 }
 
 // Инициализация при загрузке страницы
@@ -65,4 +71,8 @@ document.querySelector('.case-button-dark')?.addEventListener('click', () => {
 
 document.querySelector('.case-button-cta')?.addEventListener('click', () => {
     document.querySelector('#results-impact')?.scrollIntoView({ behavior: 'smooth' });
+});
+
+document.querySelector('.footer-scroll-top')?.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 });

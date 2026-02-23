@@ -173,7 +173,7 @@
 }
 
 .overview-table-cell:nth-child(2) {
-    width: 113px;
+    width: fit-content;
     flex: 1;
 }
 
@@ -228,8 +228,7 @@
 /* Case Buttons */
 .case-button {
     font-family: inherit;
-    width: 252px;
-    /* font-weight: 600; */
+    width: fit-content;
     font-size: 16px;
     line-height: 1.1;
     padding: 15px 30px;
@@ -1125,4 +1124,37 @@
         width: 320px;
         margin: 0 auto;
     }
+}
+
+/* Footer: кнопка «Наверх» */
+.footer-scroll-top-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.footer-scroll-top {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #181818;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.footer-scroll-top:hover {
+    opacity: 0.85;
+}
+
+.footer-scroll-top:active {
+    transform: scale(0.96);
+}
+
+.footer-scroll-top svg {
+    display: block;
 }
