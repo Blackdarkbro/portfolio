@@ -32,7 +32,7 @@
     width: 1560px;
     height: 1560px;
     left: 97%;
-    top: -810px;
+    top: -510px;
     transform: translateX(-50%);
 }
 
@@ -384,7 +384,7 @@
     width: 9px;
     height: 21px;
     flex-shrink: 0;
-    background-image: url("../images/list-circle.svg");
+    background-image: url("../images/icons/list-circle.svg");
     background-repeat: no-repeat;
     background-size: contain;
     transform: rotate(90deg);
@@ -428,7 +428,7 @@
 }
 
 .case-cta-card {
-    background-image: url("../images/cta-background.png");
+    background-image: url("../images/cta/background.webp");
     background-size: cover;
     background-position: center;
     border-radius: 32px;
@@ -521,7 +521,7 @@
     width: 9px;
     height: 21px;
     flex-shrink: 0;
-    background-image: url("../images/wavy-line-horizontal.svg");
+    background-image: url("../images/icons/wavy-line-horizontal.svg");
     background-repeat: no-repeat;
     background-size: contain;
     transform: rotate(90deg);
@@ -575,7 +575,7 @@
 
 .states-mapping-image {
     display: block;
-    background-image: url('../images/states-mapping.png');
+    background-image: url('../images/case-live-activity/states-mapping.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -706,7 +706,7 @@
     height: 438px;
     background-size: cover;
     background-position: center;
-    background-image: url(../images/block9-10.png);
+    background-image: url(../images/case-live-activity/comparison-bg.webp);
 }
 
 .platform-comparison-image img {
@@ -1031,7 +1031,7 @@
     }
 
     .case-cta-card {
-        background-image: url("../images/cta-background-tablet.png");
+        background-image: url("../images/cta/background-tablet.webp");
         background-size: cover;
         background-position: center;
         border-radius: 24px;
@@ -1088,7 +1088,7 @@
     }
 
     .platform-comparison-image {
-        background-image: url("../images/block9-10-tablet.png");
+        background-image: url("../images/case-live-activity/comparison-bg-tablet.webp");
         height: 640px;
     }
 }
@@ -1107,20 +1107,20 @@
     }
 
     .states-mapping-image {
-        background-image: url('../images/states-mapping-mobile.png');
+        background-image: url('../images/case-live-activity/states-mapping-mobile.webp');
         width: 320px;
         max-width: 100%;
         height: 313px;
     }
 
     .case-cta-card {
-        background-image: url("../images/cta-background-mobile.png");
+        background-image: url("../images/cta/background-mobile.webp");
     }
 
     .platform-comparison-image {
         background-size: cover;
         background-position: center;
-        background-image: url(../images/block9-10-mobile.png);
+        background-image: url(../images/case-live-activity/comparison-bg-mobile.webp);
         height: 640px;
         width: 320px;
         margin: 0 auto;

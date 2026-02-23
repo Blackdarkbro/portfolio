@@ -127,7 +127,7 @@ body.page-case .lang-switcher {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url("../images/wavex.png");
+    background-image: url("../images/hero/wave-bg.png");
     background-repeat: repeat-y;
     background-position: center top;
     background-size: 20px 13px;
