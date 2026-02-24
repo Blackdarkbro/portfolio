@@ -2,7 +2,10 @@
    Стили страницы кейса (case.html)
    Hero кейса, Overview, секции контента, CTA, медиа
    ========================================================================== */
+.main {
+    margin-bottom: 72px;
 
+}
 /* Case Page Layout */
 .case-main {
     padding: 0;
@@ -1130,12 +1133,12 @@
 .footer-scroll-top-wrap {
     display: flex;
     justify-content: center;
-    margin-bottom: 24px;
+    margin-bottom: 40px;
 }
 
 .footer-scroll-top {
-    width: 56px;
-    height: 56px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     background: #181818;
     color: #fff;
