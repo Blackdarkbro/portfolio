@@ -22,21 +22,14 @@
 }
 
 .case-hero-gradient {
-    position: absolute;
-    left: 412px;
-    top: -393px;
-    width: 1058px;
-    height: 1058px;
-    pointer-events: none;
-    z-index: 1;
-}
-
-.case-hero-gradient {
     width: 1560px;
     height: 1560px;
-    left: 97%;
-    top: -510px;
+    left: 87%;
+    top: -900px;
     transform: translateX(-50%);
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
 }
 
 .case-hero-content {
@@ -1103,8 +1096,8 @@
     .case-hero-gradient {
         width: 960px;
         height: 960px;
-        left: 90%;
-        top: -480px;
+        left: 0;
+        top: -900px;
         transform: translateX(-50%);
     }
 
