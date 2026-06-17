@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Стили страницы кейса (case.html)
+   Hero кейса, Overview, секции контента, CTA, медиа
+   ========================================================================== */
+
+
+
+.chapters-gap{
+    margin-bottom: 30px;
+}
+
+.results-chapter-gap{
+ margin-bottom: 8px;
+ display: inline-block;
+}
+
+.case-section-image-moby{
+padding: 40px 80px 0px 80px;
+}
+
+@media (max-width: 786px) {
+    .case-converter-gradient {
+        left: 91%;
+        top: -960px;
+    }
+.results-chapter-gap{
+     padding: 40px 20px 20px;
+     }
+}
+
+@media (max-width: 480px) {
+    .case-converter-gradient {
+        left: 200px;
+        top: -890px;
+    }
+}
