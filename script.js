@@ -65,8 +65,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 // Smooth scroll для кнопок (если они есть на странице)
-document.querySelector('.case-button-dark')?.addEventListener('click', () => {
+document.querySelector('#live-activity-button')?.addEventListener('click', () => {
     document.querySelector('#case-cta')?.scrollIntoView({ behavior: 'smooth' });
+});
+
+document.querySelector('#currency-converter-button')?.addEventListener('click', () => {
+    document.querySelector('#results-impact')?.scrollIntoView({ behavior: 'smooth' });
 });
 
 document.querySelector('.case-button-cta')?.addEventListener('click', () => {

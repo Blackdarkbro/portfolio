@@ -48,6 +48,21 @@
     gap: 24px;
 }
 
+.case-hero-title,
+.case-section-title,
+.overview-title,
+.overview-table-title,
+.challenge-card-title,
+.case-cta-title,
+.design-chapter-number,
+.design-chapter-title,
+.design-summary-title,
+.design-conclusion-title,
+.platform-subtitle,
+.results-subtitle-large {
+    font-stretch: semi-condensed;
+}
+
 .case-hero-title {
     font-family: 'Noto Serif Display', serif;
     font-size: 64px;
@@ -81,7 +96,7 @@
     font-weight: 700;
     font-size: 42px;
     line-height: 1;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .case-section-intro {
@@ -473,6 +488,7 @@
     display: flex;
     gap: 20px;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .design-chapter-number {
@@ -899,7 +915,7 @@
 
     .design-chapter-number,
     .design-chapter-title {
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .design-chapter-number {

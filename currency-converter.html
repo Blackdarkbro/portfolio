@@ -7,11 +7,10 @@
     <title>Currency converter for MTBank | Valeryia Bulakhava</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=Noto+Serif+Display:wght@600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=Noto+Serif+Display:wdth,wght@89,600;89,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/case.css">
     <link rel="stylesheet" href="css/converter.css">
-    
 </head>
 <body class="page-case">
     <!-- Header -->
@@ -54,8 +53,8 @@
                         <div class="overview-left">
                             <p class="overview-text" data-i18n="case4.overview.project"><strong>Project:</strong> Moby is the mobile banking application of MTBank.</p>
                             <p class="overview-text" data-i18n="case4.overview.text1">MTBank is a top-10 Belarusian bank providing technological financial services for private clients and businesses since 1994.</p>
+                            <button id="currency-converter-button" class="case-button case-button-dark overview-button case-button-converter" data-i18n="case4.button.straight">View outcome</button>
                         </div>
-                        <button class="case-button case-button-dark overview-button" data-i18n="case4.button.straight">View outcome</button>
                         <div class="overview-right">
                             <div class="overview-table">
                                 <div class="overview-table-row-top">
@@ -125,14 +124,15 @@
             <div class="design-chapter-header">
             <h2 class="case-section-title">[ 01 ]</h2>
             <h2 class="case-section-title" data-i18n="case4.process.title">Design journey</h2>
-            </div>
+        </div>
+        <div class="design-journy-content">
             <div class="design-chapter chapters-gap">
-                <div class="design-chapter-header">
+                <div class="letter-chapter-title">
                     <span class="design-chapter-number" data-i18n="case4.chapter1.subtitle1">[ a ]</span>
                     <span class="design-chapter-title" data-i18n="case4.process.chapter1.title">Research & Analysis</span>
                 </div>
                 <div class="design-chapter-text-container">
-                    <p  data-i18n="case4.process.chapter1.text2">This stage consisted of two key components:</p>
+                    <p  data-i18n="case4.process.chapter1.text1">This stage consisted of two key components:</p>
                     <ul class="role-sublist">
                         <li><span data-i18n="case4.process.chapter1.item1">Researched existing currency exchange flows in banking apps and analyzed competitor solutions to identify best practices and common pain points.</span></li>
                         <li><span data-i18n="case4.process.chapter1.item2">Investigate <strong>how this functionality could be implemented for Android.</strong></span></li>
@@ -140,18 +140,18 @@
                 </div>
             </div>
             <div class="design-chapter chapters-gap">
-                <div class="design-chapter-header">
+                <div class="letter-chapter-title">
                     <span class="design-chapter-number" data-i18n="case4.chapter1.subtitle2">[ b ]</span>
-                    <span class="design-chapter-title" data-i18n="case4.process.chapter2.title">Design & Iteration</span>
+                    <span class="design-chapter-title" data-i18n="case4.process.chapter1.title2">Design & Iteration</span>
                 </div>
                 <div class="design-chapter-text-container">
-                    <p  data-i18n="case4.process.chapter2.text2">Conducted multiple design iterations incorporating feedback from the client, product manager, and developers to achieve optimal usability and compliance with requirements.</p>
+                    <p  data-i18n="case4.process.chapter.text2">Conducted multiple design iterations incorporating feedback from the client, product manager, and developers to achieve optimal usability and compliance with requirements.</p>
                 
                 </div>
             </div>
 
                   <div class="design-chapter chapters-gap">
-                <div class="design-chapter-header">
+                <div class="letter-chapter-title">
                     <span class="design-chapter-number" data-i18n="case4.chapter1.subtitle3">[ c ]</span>
                     <span class="design-chapter-title" data-i18n="case4.process.chapter3.title">Collaboration & Validation</span>
                 </div>
@@ -159,51 +159,56 @@
                     <p  data-i18n="case4.process.chapter3.text2">Collaborated with developers on Nembo integration, conducted design reviews to ensure visual consistency, and worked with the QA team to validate the implementation before launch.</p>
                 </div>
             </div>
-            
+            </div>
         </div>
                
     </section>
 
         <div class="design-section-divider"></div>
 
-        <!-- Chapter 02: User Scenarios & States Mapping -->
+        <!-- Chapter 02: Solution -->
         <section class="case-section">
             <div class="case-section-content">
                 <div class="design-chapter">
                     <div class="design-chapter-header">
-                        <span class="design-chapter-number">[ 02 ]</span>
-                        <span class="design-chapter-title" data-i18n="case.process.chapter2.title">User Scenarios & States Mapping</span>
+                        <h2 class="case-section-title">[ 02 ]</h2>
+                        <h2 class="case-section-title" data-i18n="case4.process.chapter2.title">Solution</h2>
                     </div>
-                    
-                    <p data-i18n="case.process.chapter2.text1">When making a purchase, the order goes through specific statuses within the app, and all of these statuses have been implemented in Live Activities:</p>
                 </div>
-            </div>
-            
-            <div class="states-mapping-image">
-                <!-- <img src="images/states-mapping.png" alt="Order statuses flow"> -->
             </div>
             
             <div class="case-section-content">
-                <p style="margin-bottom: 12px;" data-i18n="case.process.chapter2.text2">A unique visual element was designed for each status:</p>
-                <div class="design-chapter-list-numeric">
-                    <p data-i18n="case.process.chapter2.item1">1. Icon (see Chapter 4)</p>
-                    <p data-i18n="case.process.chapter2.item2">2. Heading</p>
-                    <p data-i18n="case.process.chapter2.item3">3. Text message (e.g. "Your order is on the way")</p>
-                    <p data-i18n="case.process.chapter2.item4">4. Progress bar (helps to determine the order's status in a few seconds)</p>
+                <div class="design-chapter-text-container">
+                    <p data-i18n="case4.process.chapter2.text1"></p>
+                    <p data-i18n="case4.process.chapter2.text2"></p>
                 </div>
             </div>
 
-              <section class="case-section case-section-image-moby">
-            <div class="case-image-full">
-                <img src="images/case-currency-converter/converter-mobiles3x.webp" alt="Case Study Image">
+            <div class="platform-images-row platform-images-row-three converter-solution-images-row">
+                <img src="images/case-currency-converter/solution-screen1.png" alt="Compact presentation">
+                <img src="images/case-currency-converter/solution-screen2.png" alt="Minimal presentation (attached)">
+                <img src="images/case-currency-converter/solution-screen3.png" alt="Minimal presentation (detached)">
+            </div>
+
+            <div class="case-section-content">
+                <h3 class="design-chapter-number" data-i18n="case4.process.chapter2.subtitle">Key Features:</h3>
+                <ul class="role-sublist converter-solution-list">
+                    <li><span data-i18n="case4.process.chapter2.key-features.exchange-rates"><strong>Real-time Exchange Rates:</strong> transactions at competitive Nembo service rates available 24/7.</span></li>
+                    <li><span data-i18n="case4.process.chapter2.key-features.better-rate"><strong>Better Rate:</strong> users can improve exchange rate by increasing the transaction amount.</span></li>
+                    <li><span data-i18n="case4.process.chapter2.key-features.promo-code"><strong>Promo Code:</strong> users can get better rates by applying promotional codes.</span></li>
+                    <li><span data-i18n="case4.process.chapter2.key-features.individual-rate"><strong>Individual Rate:</strong> possibility to get a custom rate coordinated with a bank specialist.</span></li>
+
+                </ul>
+            </div>
+
+            <div class="case-section case-section-image-moby">
+                <div class="case-image-full converter-solution-image">
+                    <img src="images/case-currency-converter/converter-mobiles3x.webp" alt="Case Study Image">
+                </div>
             </div>
         </section>
-        </section>
-
-      
-
+        
         <div class="design-section-divider"></div>
-
 
         <!-- Chapter 03: Results & Impact -->
         <section id="results-impact" class="case-section">
@@ -242,12 +247,11 @@
         <!-- Chapter 04: Learnings -->
         <section class="case-section">
             <div class="case-section-content">
+                <div class="design-chapter-header">
+                    <h2 class="case-section-title">[ 04 ]</h2>
+                    <h2 class="case-section-title" data-i18n="case.process.chapter7.title">Learnings</h2>
+                </div>
                 <div class="design-chapter">
-                    <div class="design-chapter-header">
-                        <span class="design-chapter-number">[ 04 ]</span>
-                        <span class="design-chapter-title" data-i18n="case.process.chapter7.title">Learnings</span>
-                    </div>
-                    
                     <div class="learnings-section">
                         <p class="results-subtitle" data-i18n="case4.process.chapter4.guidelines.title">Design Within Constraints  </p>
                         <p data-i18n="case4.process.chapter4.guidelines.text1">Working with existing banking infrastructure taught me to find a balance between technical constraints and quality user experience.</p>
