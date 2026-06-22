@@ -1,0 +1,151 @@
+/* ==========================================================================
+   Стили страницы кейса (case.html)
+   Hero кейса, Overview, секции контента, CTA, медиа
+   ========================================================================== */
+
+.chapters-gap {
+    gap: 12px;
+}
+
+.results-chapter-gap {
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.case-section-image-moby {
+    padding: 40px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.case-button-converter {
+    font-weight: 500;
+    margin-top: 14px;
+}
+.design-journy-content {
+    display: grid;
+    gap: 30px;
+}
+.design-chapter-header {
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+}
+
+.design-chapter-header .case-section-title {
+    margin-bottom: 0;
+}
+
+.design-chapter-header .case-section-title:first-child {
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.design-chapter-text-container {
+    gap: 12px;
+}
+
+.letter-chapter-title {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.converter-solution-list {
+    margin-top: 18px;
+}
+
+.converter-solution-images-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 442px));
+    justify-content: center;
+    gap: 8px;
+    padding: 0 80px;
+    width: 100%;
+}
+
+.converter-solution-images-row img {
+    width: 100%;
+    max-width: 442px;
+    max-height: 580px;
+    aspect-ratio: 884 / 1179;
+    height: auto;
+    object-fit: contain;
+    justify-self: center;
+}
+
+.converter-solution-images-row img:last-child {
+    grid-column: 1 / -1;
+    max-width: 892px;
+    aspect-ratio: 1784 / 1160;
+}
+
+.converter-solution-image {
+    max-width: 892px;
+    max-height: 580px;
+}
+
+.converter-solution-images-row {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 786px) {
+    .case-converter-gradient {
+        left: 91%;
+        top: -960px;
+    }
+
+    .converter-solution-images-row {
+        padding: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .converter-solution-images-row img {
+        border: none;
+    }
+
+    /* .results-chapter-gap {
+        padding: 40px 20px 20px;
+    } */
+}
+
+@media (max-width: 480px) {
+    .case-converter-gradient {
+        left: 200px;
+        top: -890px;
+    }
+
+    .converter-solution-images-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-right: -20px;
+        width: calc(100% + 20px);
+        gap: 8px;
+    }
+
+    .converter-solution-images-row img {
+        flex: none;
+        width: 271px;
+        max-width: none;
+        max-height: none;
+        height: auto;
+        border: none;
+    }
+
+    .converter-solution-images-row img:not(:last-child) {
+        aspect-ratio: 884 / 1179;
+        object-fit: contain;
+    }
+
+    .converter-solution-images-row img:last-child {
+        aspect-ratio: 884 / 1179;
+        object-fit: cover;
+        object-position: center;
+    }
+}
