@@ -7,6 +7,11 @@
     gap: 12px;
 }
 
+.images-radius img {
+    border-radius: 32px;
+    border: none;
+}
+
 .results-chapter-gap {
     margin-bottom: 8px;
     display: inline-block;
