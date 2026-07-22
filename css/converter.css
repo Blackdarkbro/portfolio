@@ -32,11 +32,7 @@
     margin-bottom: 30px;
 }
 
-.design-chapter-header .case-section-title {
-    margin-bottom: 0;
-}
-
-.design-chapter-header .case-section-title:first-child {
+.design-chapter-header .title-h2:first-child {
     white-space: nowrap;
     flex-shrink: 0;
 }

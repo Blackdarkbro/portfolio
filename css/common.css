@@ -139,6 +139,54 @@ body.page-case .lang-switcher {
     pointer-events: none;
 }
 
+.block-gap-30 {
+    display: grid;
+    gap: 30px;
+}
+
+.block-gap-20 {
+    display: grid;
+    gap: 20px;
+}
+
+.block-gap-16 {
+    display: grid;
+    gap: 16px;
+}
+
+.block-gap-12 {
+    display: grid;
+    gap: 12px;
+}
+
+.block-gap-8 {
+    display: grid;
+    gap: 8px;
+}
+
+.title-h3 {
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.title-h3-light {
+    color: #fefefe;
+}
+
+.title-h2 {
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1;
+}
+
+.title-h4 {
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
 /* Footer */
 .footer {
     padding: 30px 40px;
@@ -206,6 +254,13 @@ body.page-case .lang-switcher {
 
     .footer-links {
         justify-content: center;
+    }
+
+    .title-h2 {
+        letter-spacing: -0.03em;
+        font-size: 32px;
+        min-width: 0;
+        word-wrap: break-word;
     }
 }
 
