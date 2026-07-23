@@ -388,11 +388,6 @@
 }
 
 /* Design Process */
-.design-chapter {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
 
 .design-chapter-header {
     display: flex;
@@ -404,12 +399,6 @@
     line-height: 1;
     white-space: nowrap;
     flex-shrink: 0;
-}
-
-.design-chapter-text-container {
-    gap: 12px;
-    display: flex;
-    flex-direction: column;
 }
 
 .design-summary {
@@ -570,7 +559,7 @@
     .case-hero-content {
         flex-direction: column;
         align-items: stretch;
-        gap: 32px;
+        gap: 40px;
         width: 100%;
     }
 
@@ -580,6 +569,7 @@
     }
 
     .case-hero-title {
+        letter-spacing: -0.02em;
         font-size: 50px;
         max-width: 100%;
     }
@@ -598,10 +588,6 @@
         max-width: 306px;
         width: 70%;
         object-fit: contain;
-    }
-
-    .overview-section {
-        padding: 60px 20px 48px;
     }
 
     .overview-title {
@@ -678,10 +664,6 @@
     .design-chapter-number {
         white-space: nowrap;
         flex-shrink: 0;
-    }
-
-    .case-section-image {
-        padding: 40px 20px 60px 20px;
     }
 
     .case-image-full {
