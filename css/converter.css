@@ -3,15 +3,6 @@
    Hero кейса, Overview, секции контента, CTA, медиа
    ========================================================================== */
 
-.chapters-gap {
-    gap: 12px;
-}
-
-.results-chapter-gap {
-    margin-bottom: 8px;
-    display: inline-block;
-}
-
 .case-section-image-moby {
     padding: 40px 0 0;
     display: flex;
@@ -21,38 +12,12 @@
 
 .case-button-converter {
     font-weight: 500;
-    margin-top: 14px;
-}
-.design-journy-content {
-    display: grid;
-    gap: 30px;
-}
-.design-chapter-header {
-    flex-wrap: nowrap;
-    margin-bottom: 30px;
-}
-
-.design-chapter-header .case-section-title {
-    margin-bottom: 0;
-}
-
-.design-chapter-header .case-section-title:first-child {
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-
-.design-chapter-text-container {
-    gap: 12px;
 }
 
 .letter-chapter-title {
     display: flex;
     gap: 20px;
     align-items: center;
-}
-
-.converter-solution-list {
-    margin-top: 18px;
 }
 
 .converter-solution-images-row {
