@@ -15,7 +15,7 @@
 .case-hero {
     position: relative;
     min-height: 712px;
-    padding: 68px 80px 68px 160px;
+    padding: 68px 80px 68px 80px;
     display: flex;
     align-items: center;
     overflow: visible;
@@ -59,14 +59,15 @@
 
 .case-hero-title {
     font-family: 'Noto Serif Display', serif;
-    font-size: 64px;
+    font-size: 50px;
     line-height: 1.1;
-    max-width: 495px;
+    max-width: 510px;
 }
 
 .case-hero-image {
-    flex: 0 0 425px;
+    flex: 0 0 470px;
     justify-content: center;
+    display: flex;
 }
 
 .case-hero-image img {
@@ -74,6 +75,10 @@
     max-width: 306px;
     height: auto;
     object-fit: contain;
+}
+
+.case-hero-image-horizontal img {
+    max-width: 470px;
 }
 
 .case-section {
@@ -208,6 +213,7 @@
 /* Case Buttons */
 .case-button {
     font-family: inherit;
+    font-weight: 500;
     width: fit-content;
     font-size: 16px;
     line-height: 1.1;
@@ -247,6 +253,11 @@
 /* Case Images (page) */
 .case-section-image {
     padding: 60px 80px;
+}
+
+/* Case Images (page) */
+.phoenix-case-section-image {
+    padding: 40px 80px 60px;
 }
 
 .case-image-full {
@@ -533,6 +544,20 @@
     margin: 0 180px;
 }
 
+.video-block-shadow {
+    box-shadow: 
+    4px 4px 40px 0px rgba(11, 13, 47, 0.16),
+    0px 3px 5px 0px rgba(11, 13, 47, 0.06);
+    border-radius: 1.8cqw;
+}
+
+.image-settings {
+    box-shadow: 
+    4px 4px 40px 0px rgba(11, 13, 47, 0.16),
+    0px 3px 5px 0px rgba(11, 13, 47, 0.06);
+    border-radius: 1.8cqw;
+}
+
 /* --- Медиа: страница кейса --- */
 @media (max-width: 786px) {
     .design-section-divider {
@@ -588,6 +613,10 @@
         max-width: 306px;
         width: 70%;
         object-fit: contain;
+    }
+
+     .case-hero-image-horizontal img {
+        max-width: 470px;
     }
 
     .overview-title {
@@ -791,6 +820,25 @@
         background-image: url("../images/case-live-activity/comparison-bg-tablet.webp");
         height: 640px;
     }
+
+    /* Case Images (page) */
+.phoenix-case-section-image {
+    padding: 40px 0 60px;
+}
+.overview-section {
+        padding: 60px 40px;
+    }
+
+ .image-settings {
+    
+    border-radius: 2cqw;
+}
+
+.video-block-shadow {
+
+    border-radius: 2cqw;
+}
+
 }
 
 @media (max-width: 480px) {
@@ -833,6 +881,10 @@
         width: 320px;
         margin: 0 auto;
     }
+    /* Case Images (page) */
+.phoenix-case-section-image {
+    padding: 40px 0 60px;
+}
 }
 
 /* Footer: кнопка «Наверх» */
