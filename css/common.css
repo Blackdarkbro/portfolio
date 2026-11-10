@@ -80,7 +80,7 @@ body.page-case .lang-switcher {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "IBM Plex Mono", monospace;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.15;
@@ -132,7 +132,7 @@ body.page-case .lang-switcher {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url("../images/hero/wave-bg.png");
+    background-image: url("../images/hero/wave-test.png");
     background-repeat: repeat-y;
     background-position: center top;
     background-size: 20px 13px;
@@ -205,10 +205,10 @@ body.page-case .lang-switcher {
 }
 
 .footer-logo {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 300;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 1.1;
+    line-height: 1.5;
     color: #181818;
     text-decoration: none;
     transition: opacity 0.2s ease;
@@ -224,10 +224,10 @@ body.page-case .lang-switcher {
 }
 
 .footer-link {
-    font-family: 'Work Sans', sans-serif;
+    font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.1;
+    line-height: 1.5;
     color: #181818;
     text-decoration: none;
     transition: opacity 0.2s ease;
