@@ -39,10 +39,12 @@
     gap: 60px;
     align-items: center;
     width: 100%;
+    min-width: 0;
 }
 
 .case-hero-text {
     flex: 1;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -61,7 +63,8 @@
     font-family: 'Noto Serif Display', serif;
     font-size: 50px;
     line-height: 1.1;
-    max-width: 510px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .case-hero-image {
@@ -77,8 +80,25 @@
     object-fit: contain;
 }
 
-.case-hero-image-horizontal img {
+/* Горизонтальное превью в hero (исключение для Performance Monitoring) */
+.case-hero-preview-wide {
+    flex: 0 1 470px;
+    width: 100%;
     max-width: 470px;
+    min-width: 0;
+    aspect-ratio: 470 / 290;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow:
+        4px 4px 40px 0px rgba(11, 13, 47, 0.16),
+        0px 3px 5px 0px rgba(11, 13, 47, 0.06);
+}
+
+.case-hero-preview-wide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .case-section {
@@ -551,7 +571,7 @@
     border-radius: 1.8cqw;
 }
 
-.image-settings {
+.image-block-shadow {
     box-shadow: 
     4px 4px 40px 0px rgba(11, 13, 47, 0.16),
     0px 3px 5px 0px rgba(11, 13, 47, 0.06);
@@ -593,12 +613,6 @@
         text-align: left;
     }
 
-    .case-hero-title {
-        letter-spacing: -0.02em;
-        font-size: 50px;
-        max-width: 100%;
-    }
-
     .case-hero-image {
         order: 2;
         flex: none;
@@ -615,8 +629,12 @@
         object-fit: contain;
     }
 
-     .case-hero-image-horizontal img {
+    .case-hero-preview-wide {
+        order: 2;
+        flex: none;
+        width: 100%;
         max-width: 470px;
+        margin-inline: auto;
     }
 
     .overview-title {
@@ -829,8 +847,7 @@
         padding: 60px 40px;
     }
 
- .image-settings {
-    
+ .image-block-shadow {
     border-radius: 2cqw;
 }
 
