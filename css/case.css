@@ -133,7 +133,7 @@
 .overview-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
 }
 
 .overview-left {
@@ -144,11 +144,19 @@
     flex-direction: column;
     gap: 16px;
     min-width: 0;
+    align-self: start;
 }
 
 .overview-section .overview-button {
     grid-column: 1 / -1;
     grid-row: 2;
+    justify-self: start;
+}
+
+.overview-grid > .block-gap-30 {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: start;
 }
 
 .overview-right {
@@ -199,6 +207,7 @@
 
 .overview-table-cell-full {
     padding: 12px;
+    padding-bottom: 0;
 }
 
 .overview-table-cell-full .overview-table-text {
