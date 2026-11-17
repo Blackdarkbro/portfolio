@@ -10,10 +10,6 @@
     align-items: center;
 }
 
-.case-button-converter {
-    font-weight: 500;
-}
-
 .letter-chapter-title {
     display: flex;
     gap: 20px;
