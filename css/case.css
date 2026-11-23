@@ -15,7 +15,7 @@
 .case-hero {
     position: relative;
     min-height: 712px;
-    padding: 68px 80px 68px 160px;
+    padding: 68px 80px 68px 80px;
     display: flex;
     align-items: center;
     overflow: visible;
@@ -39,10 +39,12 @@
     gap: 60px;
     align-items: center;
     width: 100%;
+    min-width: 0;
 }
 
 .case-hero-text {
     flex: 1;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -59,14 +61,16 @@
 
 .case-hero-title {
     font-family: 'Noto Serif Display', serif;
-    font-size: 64px;
+    font-size: 50px;
     line-height: 1.1;
-    max-width: 495px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .case-hero-image {
-    flex: 0 0 425px;
+    flex: 0 0 470px;
     justify-content: center;
+    display: flex;
 }
 
 .case-hero-image img {
@@ -74,6 +78,27 @@
     max-width: 306px;
     height: auto;
     object-fit: contain;
+}
+
+/* Горизонтальное превью в hero (исключение для Performance Monitoring) */
+.case-hero-preview-wide {
+    flex: 0 1 470px;
+    width: 100%;
+    max-width: 470px;
+    min-width: 0;
+    aspect-ratio: 470 / 290;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow:
+        4px 4px 40px 0px rgba(11, 13, 47, 0.16),
+        0px 3px 5px 0px rgba(11, 13, 47, 0.06);
+}
+
+.case-hero-preview-wide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .case-section {
@@ -108,7 +133,7 @@
 .overview-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
 }
 
 .overview-left {
@@ -119,11 +144,19 @@
     flex-direction: column;
     gap: 16px;
     min-width: 0;
+    align-self: start;
 }
 
 .overview-section .overview-button {
     grid-column: 1 / -1;
     grid-row: 2;
+    justify-self: start;
+}
+
+.overview-grid > .block-gap-30 {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: start;
 }
 
 .overview-right {
@@ -174,6 +207,7 @@
 
 .overview-table-cell-full {
     padding: 12px;
+    padding-bottom: 0;
 }
 
 .overview-table-cell-full .overview-table-text {
@@ -208,6 +242,7 @@
 /* Case Buttons */
 .case-button {
     font-family: inherit;
+    font-weight: 500;
     width: fit-content;
     font-size: 16px;
     line-height: 1.1;
@@ -247,6 +282,11 @@
 /* Case Images (page) */
 .case-section-image {
     padding: 60px 80px;
+}
+
+/* Case Images (page) */
+.phoenix-case-section-image {
+    padding: 40px 80px 60px;
 }
 
 .case-image-full {
@@ -533,6 +573,20 @@
     margin: 0 180px;
 }
 
+.video-block-shadow {
+    box-shadow: 
+    4px 4px 40px 0px rgba(11, 13, 47, 0.16),
+    0px 3px 5px 0px rgba(11, 13, 47, 0.06);
+    border-radius: 1.8cqw;
+}
+
+.image-block-shadow {
+    box-shadow: 
+    4px 4px 40px 0px rgba(11, 13, 47, 0.16),
+    0px 3px 5px 0px rgba(11, 13, 47, 0.06);
+    border-radius: 1.8cqw;
+}
+
 /* --- Медиа: страница кейса --- */
 @media (max-width: 786px) {
     .design-section-divider {
@@ -568,12 +622,6 @@
         text-align: left;
     }
 
-    .case-hero-title {
-        letter-spacing: -0.02em;
-        font-size: 50px;
-        max-width: 100%;
-    }
-
     .case-hero-image {
         order: 2;
         flex: none;
@@ -588,6 +636,14 @@
         max-width: 306px;
         width: 70%;
         object-fit: contain;
+    }
+
+    .case-hero-preview-wide {
+        order: 2;
+        flex: none;
+        width: 100%;
+        max-width: 470px;
+        margin-inline: auto;
     }
 
     .overview-title {
@@ -791,6 +847,24 @@
         background-image: url("../images/case-live-activity/comparison-bg-tablet.webp");
         height: 640px;
     }
+
+    /* Case Images (page) */
+.phoenix-case-section-image {
+    padding: 40px 0 60px;
+}
+.overview-section {
+        padding: 60px 40px;
+    }
+
+ .image-block-shadow {
+    border-radius: 2cqw;
+}
+
+.video-block-shadow {
+
+    border-radius: 2cqw;
+}
+
 }
 
 @media (max-width: 480px) {
@@ -833,6 +907,10 @@
         width: 320px;
         margin: 0 auto;
     }
+    /* Case Images (page) */
+.phoenix-case-section-image {
+    padding: 40px 0 60px;
+}
 }
 
 /* Footer: кнопка «Наверх» */
